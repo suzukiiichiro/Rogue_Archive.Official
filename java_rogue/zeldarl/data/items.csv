@@ -1,0 +1,89 @@
+ID;Name;Appearance;EffectOnUse;SingleUse;hit%;damage;range;reloadTurns;attackCost;reloadCost;slicesThru;useMessage;minLevel;rarity;shopDesc;defense;integrity;attackSFX;stackable;effectOnWear;equipType;isUnique
+BOOTS;Boots;BOOTS;;false;0;0;0;0;0;0;false;;1;100;Iron boots, prevents paralysis;0;0; ;true;PROTECTPARA;ACCESORY;false
+CLOAK;Cloak;CLOAK;;false;0;0;0;0;0;0;false;;4;100;A dark cloak, increases evasion;0;0; ;true;EVA5;ACCESORY;true
+AMULET;Magic Amulet;AMULET;;false;0;0;0;0;0;0;false;;5;100;Magic Amulet (Soul +1);0;0;;true;SOUL1;ACCESORY;true
+HELM;Helm of Light;HELM;;false;0;0;0;0;0;0;false;;8;100;A magic helm, increases sight;0;0; ;true;SIGHT2;ACCESORY;true
+TRIANGLE;Triangle Amulet;TRIANGLE;;false;0;0;0;0;0;0;false;;20;50;Blackrock triangle amulet (Soul+3, Mana+20);0;0;;true;SOUL2MANA20;ACCESORY;true
+COMBAT_RING;Ring of the Warrior;MAGIC_RING;;false;0;0;0;0;0;0;false;;20;50;The ring of the warrior;0;0;;true;COMBAT1;ACCESORY;true
+SPEED_RING;Ring of Speed;MAGIC_RING;;false;0;0;0;0;0;0;false;;7;30;The ring of haste;0;0;;true;SPEED1;ACCESORY;true
+ENDURANCE_RING;Ring of Endurance;MAGIC_RING;;false;0;0;0;0;0;0;false;;7;30;The ring of endurance;0;0;;true;INTEGRITY20;ACCESORY;true
+MIRAGE_RING;Ring of Mirages;MAGIC_RING;;false;0;0;0;0;0;0;false;;12;30;The ring of many mirages;0;0;;true;EVA15;ACCESORY;true
+POWER_RING;Ring of Power;MAGIC_RING;;false;0;0;0;0;0;0;false;;7;30;The ring of magi;0;0;;true;DAMAGE1;ACCESORY;true
+GOLDEN_RING;Ring of Gold;MAGIC_RING;;false;0;0;0;0;0;0;false;;12;70;Ornamental Golden Ring;0;0;;true;;ACCESORY;true
+BLOOD_RING;Ring of Blood;MAGIC_RING;;false;0;0;0;0;0;0;false;;12;30;The ring of blood;0;0;;true;DAMAGE2;ACCESORY;true
+SORSARIAN_RING;Ring of Sorsaria;MAGIC_RING;;false;0;0;0;0;0;0;false;;16;30;The Sorsarian Ring of Power;0;0;;true;COMBAT2SOUL2;ACCESORY;true
+LEATHER;Leather;LEATHER;;false;0;0;0;0;0;0;false;;1;100;Padded leather vest;20;10; ;false;;ARMOR;false
+VACUUM_SUIT;Vacuum Suit;VACUUM_SUIT;;false;0;0;0;0;0;0;false;;17;100;Suit made for space travels;50;25; ;false;;ARMOR;false
+CHAIN_MAIL;Chain Mail;CHAIN_MAIL;;false;0;0;0;0;0;0;false;;4;100;Steel chain mail;30;30; ;false;;ARMOR;false
+PLATE_MAIL;Plate Mail;PLATE_MAIL;;false;0;0;0;0;0;0;false;;10;100;Set of plate armor;40;40; ;false;;ARMOR;false
+REFLECT_SUIT;Reflect Suit;REFLECT_SUIT;;false;0;0;0;0;0;0;false;;21;100;High technology battle suit;60;40; ;false;;ARMOR;false
+MAGIC_ARMOR;Magic Armor;MAGIC_ARMOR;;false;0;0;0;0;0;0;false;;9999;100;Magically made armor;35;60; ;true;;ARMOR;false
+SKULL_SUIT;Skull Suit;SKULL_SUIT;;false;0;0;0;0;0;0;false;;20;30;Armour made of dragon bones;80;80; ;false;;ARMOR;true
+WHITE_DRAGON_SUIT;White Dragon Suit;WHITE_DRAGON_SUIT;;false;0;0;0;0;0;0;false;;24;30;Armour of the White Dragon;120;100; ;false;;ARMOR;true
+BUCKLER;Buckler;BUCKLER;;false;0;0;0;0;0;0;false;;3;100;Small metal buckler;10;30; ;false;;SHIELD;false
+SMALL_SHIELD;Small Shield;SMALL_SHIELD;;false;0;0;0;0;0;0;false;;6;100;Round shield;15;20; ;false;;SHIELD;false
+WOODEN_SHIELD;Wooden Shield;WOODEN_SHIELD;;false;0;0;0;0;0;0;false;;9;100;Wooden shield;15;30; ;false;;SHIELD;false
+TOWER_SHIELD;Tower Shield;TOWER_SHIELD;;false;0;0;0;0;0;0;false;;12;100;Massive metal shield;20;40; ;false;;SHIELD;false
+MAGIC_SHIELD;Magic Shield;MAGIC_SHIELD;;false;0;0;0;0;0;0;false;;16;50;Magic Shield;20;60; ;false;;SHIELD;true
+AEGIS_SHIELD;Aegis Shield;MAGIC_SHIELD;;false;0;0;0;0;0;0;false;;20;40;Shield of Aegis;20;120; ;false;;SHIELD;true
+CUDGEL;Cudgel;CUDGEL;;false;70;2;1;0;10;0;false;;1;100;Small iron mace;0;0;;true;;WEAPON;false
+BOW_ARROWS;Bow & Arrows;BOW_ARROWS;;false;40;2;10;1;20;10;false;;5;100;Simple wooden bow;0;0;MISSILE 10 9 10 false;true;;WEAPON;false
+WAND;Power Wand;WAND;;false;50;2;1;0;10;0;false;;10;100;Magic Wand (Soul+2, Mana+10);0;0;;true;SOUL1MANA10;WEAPON;false
+DAGGER;Dagger;DAGGER;;false;60;3;1;0;-10;0;false;;1;100;Short stabbing weapon;0;0; ;true;;WEAPON;false
+HAND_AXE;Hand Axe;HAND_AXE;;false;70;3;1;0;0;0;false;;2;100;One edged small axe;0;0;;true;;WEAPON;false
+LIGHT_MACE;Light Mace;LIGHT_MACE;;false;80;3;1;0;20;0;false;;3;100;Medium iron mace;0;0;;true;;WEAPON;false
+STAFF;Power Staff;STAFF;;false;60;3;1;0;20;0;false;;12;100;Mystic Staff (Soul+2, Mana+10);0;0;;true;SOUL1MANA10;WEAPON;false
+HAMMER;Iron Hammer;HAMMER;;false;40;4;1;0;30;0;false;;1;100;Iron hammer;0;0;;true;;WEAPON;false
+SHORT_SWORD;Short Sword;SHORT_SWORD;;false;70;4;1;0;-10;0;false;;3;100;Short slicing weapon;0;0;;true;;WEAPON;false
+GREAT_SWORD;Great Sword;GREAT_SWORD;;false;80;4;3;0;30;0;false;;11;100;Two handed sword;0;0;MELEE 3 9 30;true;;WEAPON;false
+PISTOL;Pistol;PISTOL;;false;70;4;20;6;10;40;false;;12;100;7mm pistol;0;0;MISSILE 20 9 10 false;true;;WEAPON;false
+RONDORIN_BOW;Rondorin Bow;RONDORIN_BOW;;false;70;4;10;3;0;10;true;;16;30;Magic Bow from Rondorin;0;0;MISSILE 10 9 10 false;true;;WEAPON;true
+SCORPION_DAGGER;Scorpion Dagger;SCORPION_DAGGER;;false;80;4;1;0;-25;0;false;;18;30;Quick dagger found on the scorpion's cave;0;0; ;true;;WEAPON;true
+OZYMANDIAS_STAFF;Ozymandia's Staff;OZYMANDIAS_STAFF;;false;70;4;1;0;10;0;false;;20;30;The Staff of Ozymandias(Soul+2, Mana+10);0;0;;true;SOUL2MANA10;WEAPON;true
+ROPE_SPIKE;Rope & Spikes;ROPE_SPIKE;;false;50;5;2;0;20;0;false;;7;100;Midrange chained mace;0;0;MELEE 2 9 30;true;;WEAPON;false
+MACE;Mace;MACE;;false;80;5;1;0;20;0;false;;8;100;Big iron mace;0;0; ;true;;WEAPON;false
+BATTLE_AXE;Battle Axe;BATTLE_AXE;;false;90;5;2;0;10;0;false;;9;100;Double edged battle axe;0;0;MELEE 2 9 30;true;;WEAPON;false
+PHAZER;Phazer;PHAZER;;false;80;5;12;5;10;100;false;;18;100;Energy gun;0;0;MISSILE 12 9 10 false;true;;WEAPON;false
+HAMMER_JUSTICE;Hammer of Justice;HAMMER_JUSTICE;;false;60;5;2;0;20;0;false;;20;30;The hammer of justice;0;0;;true;;WEAPON;true
+AXE;Axe;AXE;;false;80;6;1;0;0;0;false;;6;100;Double edged axe;0;0; ;true;;WEAPON;false
+SWORD;Sword;SWORD;;false;70;6;2;0;10;0;false;;7;100;Double edged slicing blade;0;0;MELEE 2 9 30;true;;WEAPON;false
+LIGHT_SWORD;Light Sword;LIGHT_SWORD;;false;70;6;2;0;0;0;false;;16;100;Energy sword;0;0;MELEE 3 9 30;true;;WEAPON;false
+BOBBIT_MACE;Bobbit Mace;BOBBIT_MACE;;false;80;6;2;0;10;0;false;;16;40;Mace of the Bobbit Race;0;0; ;true;;WEAPON;true
+BLACK_SWORD;Black Sword;BLACK_SWORD;;false;80;6;3;0;0;0;false;;20;30;The black sword;0;0;MELEE 3 9 30;true;;WEAPON;true
+DWARVEN_AXE;Dwarven Axe;DWARVEN_AXE;;false;90;6;2;0;0;0;false;;20;30;Ancient Axe of the Dwarfs;0;0;MELEE 2 9 30;true;;WEAPON;true
+ARGONAUTS_MACE;Argonauts' Mace;ARGONAUTS_MACE;;false;70;7;2;0;10;0;false;;20;30;Mace of the Argonauts;0;0; ;true;;WEAPON;true
+BLASTER;Blaster;BLASTER;;false;80;8;15;4;30;150;true;;24;100;Ultimate technology;0;0;MISSILE 15 9 10 false;true;;WEAPON;false
+ENILNO;Enilno;ENILNO;;false;90;15;2;0;-25;0;true;;9999;100;Legendary Quicksword;0;0;MELEE 2 9 30;true;;WEAPON;true
+YELLOW_POTION;Yellow Potion;YELLOW_POTION;RECOVERP 25;true;0;0;0;0;0;0;false;You drink the yellow potion, You feel better;1;100;Yellow potion of healing;0;0; ;true;;;false
+TORCH;Torch;TORCH;SIGHT 100;true;0;0;0;0;0;0;false;You light the torch. The arena looks brighter;1;100;A torch, increases sight;0;0; ;true;;;false
+RED_POTION;Red Potion;RED_POTION;RECOVERMANAP 25;true;0;0;0;0;0;0;false;You drink the red potion, You feel powerful;2;100;Red potion of Mana;0;0; ;true;;;false
+BLUE_POTION;Blue potion;BLUE_POTION;INCREASE_DEFENSE 30;true;0;0;0;0;0;0;false;You drink the blue potion, you feel protected;2;100;Blue potion of protection;0;0; ;true;;;false
+TRILITHIUM;Tri-Lithium;TRILITHIUM;;false;0;0;0;0;0;0;false;;3;100;Strange blue material;0;0; ;true;;;false
+ORANGE_POTION;Orange potion;ORANGE_POTION;CURE;true;0;0;0;0;0;0;false;You drink the orange potion, You feel better;3;100;Orange potion of cure;0;0; ;true;;;false
+WHITE_POTION;White potion;WHITE_POTION;CAST XRAY;true;0;0;0;0;0;0;false;You drink the white potion, You feel cosmic!;7;100;White potion of Videm;0;0; ;true;;;false
+MYSTIC_GEM;Mystic Gem;MYSTIC_GEM;CAST VIEW;true;0;0;0;0;0;0;false;You peer at the gem. It dissapears!;8;100;A mystic gem that contains knowledge of the place;0;0; ;true;;;false
+GREEN_POTION;Green potion;GREEN_POTION;POISON;true;0;0;0;0;0;0;false;You drink the green potion, ARG, CHOKE, *GASP*!;10;100;Green potion of poison;0;0; ;true;;;false
+KEG;Powder Keg;KEG;PUTKEG;true;0;0;0;0;0;0;false;You light the powder keg! RUN!;10;100;Exploding Powder Keg;0;0; ;true;;;false
+STRANGE_COIN;Strange Coin;STRANGE_COIN;CAST STOP_TIME;true;0;0;0;0;0;0;false;You flip the coin. Time Stops!;12;100;A coin that stops time;0;0; ;true;;;false
+BLACK_POTION;Black potion;BLACK_POTION;INVISIBILITY 30;true;0;0;0;0;0;0;false;You drink the black potion, You disappear!;12;100;Black potion of invisibility;0;0; ;true;;;false
+ANKH;Ankh;ANKH;RECOVERP 50;true;0;0;0;0;0;0;false;You raise the ankh!;14;100;A simple wooden ankh;0;0; ;true;;;false
+GEM;TeleGem;GEM;GEMS;true;0;0;0;0;0;0;false;You insert the gem in your gauntlet, the gauntlet shines!;9999;100;Blue telegem;0;0; ;true;;;false
+WHITE_GEM;White telegem;WHITE_GEM;WHITE_GEM;true;0;0;0;0;0;0;false;;13;100;White telegem;0;0; ;true;;;true
+AMBER_GEM;Amber telegem;AMBER_GEM;AMBER_GEM;true;0;0;0;0;0;0;false;;13;100;Amber telegem;0;0; ;true;;;true
+BLACK_GEM;Black telegem;BLACK_GEM;BLACK_GEM;true;0;0;0;0;0;0;false;;9999;100;Black telegem;0;0; ;true;;;true
+BRASS_BUTTON;Brass button;BRASS_BUTTON;;false;0;0;0;0;0;0;false;;9999;100;Shiny brass button;0;0; ;true;;;true
+SCROLL_RECOVER;Scroll of Recover;SCROLL_RECOVER;CAST RECOVER;true;0;0;0;0;0;0;false;You read the scroll;4;100;Casts Recover;0;0; ;true;;;false
+SCROLL_BLINK;Scroll of Blink;SCROLL_BLINK;CAST BLINK;true;0;0;0;0;0;0;false;You read the scroll;6;100;Casts Blink;0;0; ;true;;;false
+SCROLL_QUICKNESS;Scroll of Quickness;SCROLL_QUICKNESS;CAST QUICKNESS;true;0;0;0;0;0;0;false;You read the scroll;10;100;Casts Quickness;0;0; ;true;;;false
+SCROLL_EXPLOSION;Scroll of Explosion;SCROLL_EXPLOSION;CAST EXPLOSION;true;0;0;0;0;0;0;false;You read the scroll;12;100;Casts Explosion;0;0; ;true;;;false
+SCROLL_SUMMON;Scroll of Summon;SCROLL_SUMMON;CAST SUMMON;true;0;0;0;0;0;0;false;You read the scroll;18;100;Casts Summon;0;0; ;true;;;false
+SCROLL_CHARM;Scroll of Charm;SCROLL_CHARM;CAST CHARM;true;0;0;0;0;0;0;false;You read the scroll;13;100;Casts Charm;0;0; ;true;;;false
+SCROLL_INVOKE;Scroll of Invoke;SCROLL_INVOKE;CAST INVOKE;true;0;0;0;0;0;0;false;You read the scroll;10;100;Casts Invoke;0;0; ;true;;;false
+FIGHTERSWORD;Fighter's Sword;FIGHTERSWORD;;false;70;2;2;0;0;0;false;;7;100;A simple sword;0;0;MELEE 2 9 30;true;;WEAPON;true
+GREENMAIL;Green mail;GREENMAIL;;false;0;0;0;0;0;0;false;;4;100;Green robes;0;30; ;false;;ARMOR;true
+BOW;Bow & Arrows;BOW;;false;100;1;10;1;50;1;false;;5;100;Magic bow;0;0;MISSILE 10 9 10 false;false;;WEAPON;true
+HEALTH_POTION;Red Potion;HEALTH_POTION;RECOVERP 100;true;0;0;0;0;0;0;false;You drink the red potion, you feel much better!;1;100;Red Potion of Health;0;0; ;true;;;false
+MAGIC_POTION;Green Potion;MAGIC_POTION;RECOVERMANAP 100;true;0;0;0;0;0;0;false;You drink the green potion. Your magic revitalizes!;1;100;Green Potion of Magic;0;0; ;true;;;false
+FULL_POTION;Blue Potion;FULL_POTION;RECOVERALL;true;0;0;0;0;0;0;false;You drink the blue potion, you feel like new!;1;100;Blue Potion of Miracle;0;0; ;true;;;false
+WARRIOR_SHIELD;Warrior Shield;WARRIOR_SHIELD;;false;0;0;0;0;0;0;false;;6;100;Warrior's Shield;50;20; ;false;;SHIELD;true
+RED_SHIELD;Red Shield;RED_SHIELD;;false;0;0;0;0;0;0;false;;6;100;Red Shield;75;20; ;false;;SHIELD;true

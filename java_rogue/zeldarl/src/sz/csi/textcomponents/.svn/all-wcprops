@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents
+END
+ListItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/ListItem.java
+END
+BasicListItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/BasicListItem.java
+END
+MenuBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/MenuBox.java
+END
+TextBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/TextBox.java
+END
+MenuItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/MenuItem.java
+END
+ListBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/ListBox.java
+END
+TextComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/TextComponent.java
+END
+TextInformBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/src/sz/csi/textcomponents/TextInformBox.java
+END

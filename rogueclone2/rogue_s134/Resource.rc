@@ -1,0 +1,243 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "再開(&O)\tCtrl+O",            IDM_OPEN
+        MENUITEM "中断(&S)\tCtrl+S",            IDM_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "セーブせず終了(&Q)\tCtrl+Q",  IDM_QUIT
+        MENUITEM SEPARATOR
+        MENUITEM "バージョン情報(&A)\tCtrl+V",  IDM_VERSION
+        MENUITEM "スコア表示",                  IDM_SCORE
+    END
+    MENUITEM "設定(&C)",                    IDM_CONFIG
+    MENUITEM "フォント設定(&F)",            IDM_FONTDIALOG
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_QUIT,               VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_VERSION,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "Win32 Program\0"
+            VALUE "FileVersion", "0.0\0"
+            VALUE "InternalName", " \0"
+            VALUE "LegalCopyright", "Copyright (C) 2001 風桜へぽぽ\0"
+            VALUE "LegalTrademarks", " \0"
+            VALUE "OriginalFilename", ".exe\0"
+            VALUE "PrivateBuild", "0\0"
+            VALUE "ProductName", "Win32 Program\0"
+            VALUE "ProductVersion", "0.0\0"
+            VALUE "SpecialBuild", "0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VERSION DIALOG DISCARDABLE  0, 0, 159, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDCANCEL,50,126,58,14,BS_CENTER
+    ICON            IDI_ICON,IDC_STATIC,10,6,20,20,SS_SUNKEN | WS_BORDER
+    CTEXT           "",IDC_VERTITLE,34,8,112,8
+    CTEXT           "Copyright(c) 2001 風桜へぽぽ(ﾟｰﾟ)ノ",IDC_STATIC,34,18,
+                    112,8
+    CTEXT           "http://www.freak.ne.jp/HEPOPO/",IDC_HOMEPAGE,14,42,130,
+                    8,SS_NOTIFY | NOT WS_GROUP
+    CTEXT           "mailto:hepopo@sp.office.ne.jp",IDC_EMAIL,14,54,130,8,
+                    SS_NOTIFY | NOT WS_GROUP
+    GROUPBOX        "",IDC_STATIC,10,32,138,36,BS_CENTER
+    LTEXT           "1987 ： Tim Stoehr ： ローグクローン原作",IDC_STATIC,14,
+                    78,119,8
+    LTEXT           "1988 ： 太田　純 ： 日本語版＆MS-DOS移植",IDC_STATIC,14,
+                    88,130,8
+    LTEXT           "1992 ： 伊藤 康史 ： データ分離版",IDC_STATIC,14,98,100,
+                    8
+    LTEXT           "1999 ： 風桜へぽぽ ： Windows版",IDC_STATIC,14,108,97,8
+    LTEXT           "敬称略",IDC_STATIC,18,128,22,8
+    GROUPBOX        "",IDC_STATIC,10,68,138,54,BS_CENTER
+END
+
+IDD_CONFIG DIALOG DISCARDABLE  0, 0, 122, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "設定ダイアログ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,140,100,14
+    LTEXT           "メッセージファイル名",IDC_STATIC,4,6,61,8
+    EDITTEXT        IDC_MESG,10,16,100,12,ES_AUTOHSCROLL
+    LTEXT           "ユーザー名",IDC_STATIC,4,32,35,8
+    EDITTEXT        IDC_NAME,10,42,100,12,ES_AUTOHSCROLL
+END
+
+IDD_NAME DIALOG DISCARDABLE  0, 0, 139, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "名前の入力"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_NAME,6,22,126,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDCANCEL,6,40,126,14
+    CTEXT           "Static",IDC_NAMEMSG,6,6,126,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_VERSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

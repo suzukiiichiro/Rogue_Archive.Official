@@ -1,0 +1,162 @@
+diff -aruN ../rogue_s.old/Makefile.redhat ./Makefile.redhat
+--- ../rogue_s.old/Makefile.redhat	Thu Jan  1 09:00:00 1970
++++ ./Makefile.redhat	Mon Oct 23 13:41:26 2000
+@@ -0,0 +1,59 @@
++#########################################################
++#							#
++#	Rogue-clone Makefile for UNIX			#
++#							#
++#########################################################
++
++OBJS =	curses.o hit.o init.o invent.o level.o \
++	machdep.o main.o message.o monster.o move.o \
++	object.o pack.o play.o random.o ring.o \
++	room.o save.o score.o spechit.o throw.o \
++	trap.o use.o zap.o
++
++# for BSD (Japanese, using my own CURSES)	by Yasha
++#CC	= gcc -traditional-cpp
++#CFLAGS	= -O -g -DUNIX -DUNIX_BSD4_2 -DCURSES -DJAPAN -DEUC -DTOPSCO
++#LIBS	=
++
++# for 386BSD (Japanese, using my own CURSES)	by Yasha
++#CC	= gcc
++#CFLAGS	= -O -g -DUNIX -DUNIX_BSD4_2 -DUNIX_386BSD -DCURSES -DJAPAN -DEUC -DTOPSCO
++#LIBS	=
++
++# for NeXT (Japanese, using jcurses of NeXT)	by Yasha
++#CFLAGS	= -O -DUNIX -DUNIX_BSD4_2 -DJAPAN -DEUC -DTOPSCO
++#LIBS	= -L/usr/nje/lib -lwcurses -ltermcap
++#ADDHEADER = jcurses.h
++
++# for BSD
++#CFLAGS	= -O -DUNIX -DUNIX_BSD4_2
++#LIBS	= -lcurses -ltermcap
++
++# for BSD (with COLOR, using my own CURSES)
++#CFLAGS	= -O -DUNIX -DUNIX_BSD4_2 -DCURSES -DCOLOR
++#LIBS	=
++
++# for System V
++#CFLAGS	= -O -DUNIX -DUNIX_SYSV
++#LIBS	= -lcurses
++
++# for System V (with COLOR, using my own CURSES)
++#CFLAGS	= -O -DUNIX -DUNIX_SYSV -DCURSES -DCOLOR
++#LIBS	=
++
++# for linux (Japanese, using my own CURSES)    by fuku
++CFLAGS	= -O -DUNIX -DUNIX_SYSV -DCURSES -DJAPAN -DEUC -DTOPSCO -DLINUX -DCOLOR
++LIBS	=
++
++
++rogue: $(OBJS)
++	$(CC) -o rogue $(OBJS) $(LIBS)
++
++Clean:
++	rm -f rogue *.o core
++
++$(OBJS): rogue.h $(ADDHEADER)
++
++# Only for jcurses of NeXT step 2.1J
++jcurses.h:
++	sed -e 's/.*widec\.h.*//g' /usr/nje/include/jcurses.h > jcurses.h
+diff -aruN ../rogue_s.old/init.c ./init.c
+--- ../rogue_s.old/init.c	Mon Sep 14 14:40:11 1992
++++ ./init.c	Mon Oct 23 13:41:26 2000
+@@ -183,6 +183,9 @@
+ 		md_control_keyboard(1);		/* by Yasha */
+ #endif
+ 	}
++#ifdef LINUX
++	md_loadtty() ;
++#endif
+ 	md_exit(0);
+ }
+ 
+diff -aruN ../rogue_s.old/machdep.c ./machdep.c
+--- ../rogue_s.old/machdep.c	Mon Sep 14 14:40:12 1992
++++ ./machdep.c	Mon Oct 23 13:41:26 2000
+@@ -278,10 +278,14 @@
+ #ifdef UNIX_386BSD
+ 	fpurge(stdin);
+ #else
++#ifdef LINUX
++	fflush(stdin) ;
++#else
+ 	ln += stdin->_cnt;
+ 	for (; ln > 0; ln--) {
+ 		(void) getchar();
+ 	}
++#endif
+ #endif /*386BSD*/
+ #endif /* UNIX */
+ 
+@@ -322,6 +326,19 @@
+  * cause certain command characters to be unavailable.
+  */
+ 
++#ifdef LINUX
++static struct termio tty_orig;
++md_savetty()
++{
++	ioctl(0, TCGETA, &tty_orig) ;
++}
++
++md_loadtty()
++{
++	ioctl(0, TCSETA, &tty_orig) ;
++}
++#endif
++
+ md_control_keyboard(mode)
+ boolean mode;
+ {
+@@ -364,7 +381,9 @@
+ 		tc_temp.t_startc = tc_temp.t_stopc = -1;
+ #endif /* UNIX_BSD4_2 */
+ #ifdef UNIX_SYSV
++#ifndef LINUX
+ 		_tty.c_cc[VSWTCH] = CNSWTCH;
++#endif
+ #endif /* UNIX_SYSV */
+ 	}
+ #ifdef UNIX_BSD4_2
+@@ -397,9 +416,9 @@
+ md_heed_signals()
+ {
+ #ifdef UNIX
+-	signal(SIGINT, onintr);
+-	signal(SIGQUIT, byebye);
+-	signal(SIGHUP, error_save);
++	signal(SIGINT, (void(*)(int) )onintr);
++	signal(SIGQUIT, (void(*)(int) )byebye);
++	signal(SIGHUP, (void(*)(int) )error_save);
+ #endif /* UNIX */
+ 
+ #ifdef HUMAN
+diff -aruN ../rogue_s.old/main.c ./main.c
+--- ../rogue_s.old/main.c	Mon Sep 14 14:40:12 1992
++++ ./main.c	Mon Oct 23 13:41:26 2000
+@@ -28,6 +28,10 @@
+ 	char buf[80];
+ #endif
+ 
++#ifdef LINUX
++	md_savetty() ;
++#endif
++
+ 	if (read_mesg(argc, argv))
+ 		exit(1);
+ 
+diff -aruN ../rogue_s.old/play.c ./play.c
+--- ../rogue_s.old/play.c	Mon Sep 14 14:40:12 1992
++++ ./play.c	Mon Oct 23 13:43:24 2000
+@@ -163,6 +163,7 @@
+ #ifndef ORIGINAL
+ message("Japanese edition: Ver.1.3a (enhanced by ohta@src.ricoh.co.jp)", 0);
+ message("Ver.1.3aS program bug fix/separate (by brx@kmc.kyoto-u.ac.jp)", 0);	/* by Yasha */
++message("Ver.1.3aSl compile for linux (by fuku@rouge.gr.jp)", 0);
+ message(mesg[1]);		/* for message version */
+ #endif
+ 			break;

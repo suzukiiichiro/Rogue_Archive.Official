@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Martin's Dungeon Bash AI Spoiler</title>
+</head>
+<body>
+<h1>MARTIN'S OFFICIAL DUNGEON BASH AI SPOILER</h1>
+<h2>For Version 1.7 of Martin's Dungeon Bash</h2>
+<p>This is the official AI spoiler for Martin's Dungeon Bash, version 1.7.</p>
+<h2>Terminological note</h2>
+<p>Martin's Dungeon Bash uses roguelike geometry, in which space is rigidly quantised into square cells, and the distance from a cell A to another cell B, joined to it at either an edge or a corner, is exactly 1. The distance from cell A to a distant cell C is the minimum number of edges and vertices which one must traverse to get from cell A to cell C. The "cardinal directions" of roguespace are the directions in which one can move from one cell to an adjacent cell.</p>
+<h2>Movement selection algorithms</h2>
+<p>There are five movement selection algorithms used in Martin's Dungeon Bash, as follows:</p>
+<h3>Naive AI</h3>
+<p>The "naive" AI is used by "stupid" monsters without ranged attacks who have line of sight to the player. The monster tries, for each of the three adjacent squares which are closer to the player, to get closer to the player.</p>
+<h3>Missile AI</h3>
+<p>The "missile" AI is used by any monster with a ranged attack (either shooting or black magic) requiring cardinal alignment which has line of sight to the player. The monster tries to close with the player, preferring to do so along a cardinal if already on one, and to get onto the cardinal if it isn't already on it.</p>
+<h3>Smart AI</h3>
+<p>The "smart" AI is used by "smart" monsters without ranged attacks who have line of sight to the player. The monster tries, for each of the three adjacent squares which are closer to the player, to get closer to the player, preferring to find a square which is <em>not</em> on cardinals relative to the player unless that square is also adjacent to the player.</p>
+<h3>Drunk AI</h3>
+<p>The "drunk" AI is used by "stupid" monsters which lack line of sight to the player. The monster tries three randomly selected adjacent squares.</p>
+<h3>Seeking AI</h3>
+<p>The seeking AI tries to get closer to the player. It's not sophisticated enough yet, but I think it should work at least some of the time.</p>
+</body>
+</html>

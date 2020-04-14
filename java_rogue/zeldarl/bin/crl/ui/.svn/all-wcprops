@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/2/trunk/src/crl/ui
+END
+CommandListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2/trunk/src/crl/ui/CommandListener.java
+END
+Display.java
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/src/crl/ui/Display.java
+END
+RefreshActor.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/src/crl/ui/RefreshActor.java
+END
+AppearanceFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/src/crl/ui/AppearanceFactory.java
+END
+UserAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/src/crl/ui/UserAction.java
+END
+UserCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/src/crl/ui/UserCommand.java
+END
+Appearance.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/src/crl/ui/Appearance.java
+END
+UserInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/src/crl/ui/UserInterface.java
+END
+ActionCancelException.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/src/crl/ui/ActionCancelException.java
+END

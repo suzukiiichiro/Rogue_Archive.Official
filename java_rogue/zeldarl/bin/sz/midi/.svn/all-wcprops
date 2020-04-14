@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/2/trunk/src/sz/midi
+END
+SoundsWatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/src/sz/midi/SoundsWatcher.java
+END
+MidisLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/src/sz/midi/MidisLoader.java
+END
+MidiInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/src/sz/midi/MidiInfo.java
+END
+STMidiPlayerOld.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/src/sz/midi/STMidiPlayerOld.java
+END
+STMidiPlayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/src/sz/midi/STMidiPlayer.java
+END

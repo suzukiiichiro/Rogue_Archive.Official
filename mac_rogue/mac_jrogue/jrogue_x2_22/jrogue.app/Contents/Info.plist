@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFAppleHelpAnchor</key>
+	<string>rogueguide</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>Japanese</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeIconFile</key>
+			<string>SaveIcon</string>
+			<key>CFBundleTypeName</key>
+			<string>jrogue 保存されたゲーム</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>rgSv</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeIconFile</key>
+			<string>PrefsIcon</string>
+			<key>CFBundleTypeName</key>
+			<string>jrogue 設定</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>rgOp</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeIconFile</key>
+			<string>ScoreIcon</string>
+			<key>CFBundleTypeName</key>
+			<string>jrogue スコアファイル</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>rgSc</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>jrogue</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.juangotoh.jrogue</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>jRge</string>
+	<key>CFBundleVersion</key>
+	<string>2.2.2</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

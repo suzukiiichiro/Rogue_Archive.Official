@@ -1,0 +1,1437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta content="text/html; charset=Shift_JIS" http-equiv="content-type">
+  <title>A Guide to the Dungeons of Doom</title>
+</head><body><br>
+
+<br>
+
+<h2 style="margin-left: 40px;">A Guide to the Dungeons of Doom</h2>
+
+<br>
+
+<br>
+
+<div style="margin-left: 160px;">Michael C. Toy<br>
+</div>
+
+<div style="margin-left: 120px;">&nbsp;Kenneth C. R. C. Arnold<br>
+</div>
+
+<br>
+
+<br>
+
+<div style="margin-left: 80px;">Computer Systems Research Group<br>
+</div>
+
+&nbsp;Department of Electrical Engineering and Computer Science<br>
+
+<div style="margin-left: 120px;">University of California<br>
+</div>
+
+<div style="margin-left: 120px;">Berkeley, California&nbsp; 94720<br>
+</div>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<h2 style="margin-left: 160px;">ABSTRACT</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp; Rogue is a visual CRT based fantasy game which&nbsp; runs<br>
+
+&nbsp;&nbsp;&nbsp; under the&nbsp; UNIX*&nbsp; timesharing&nbsp; system.&nbsp;&nbsp; This&nbsp; paper<br>
+
+&nbsp;&nbsp;&nbsp; describes&nbsp; how&nbsp; to play rogue, and gives a few hints<br>
+
+&nbsp;&nbsp;&nbsp; for those&nbsp; who&nbsp; might&nbsp; otherwise&nbsp; get&nbsp; lost&nbsp; in&nbsp; the<br>
+
+&nbsp;&nbsp;&nbsp; Dungeons of Doom.<br>
+
+<br>
+
+&nbsp;&nbsp; *UNIX is a trademark of Bell Laboratories<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<h2>1.&nbsp; Introduction</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; You have just finished your years as a student&nbsp; at&nbsp; the<br>
+
+local&nbsp; fighter's&nbsp; guild.&nbsp;&nbsp; After much practice and sweat you<br>
+
+have finally completed your training and are ready to embark<br>
+
+upon&nbsp; a&nbsp; perilous&nbsp; adventure.&nbsp; As a test of your skills, the<br>
+
+local guildmasters have sent you into the Dungeons of&nbsp; Doom.<br>
+
+Your&nbsp; task&nbsp; is&nbsp; to&nbsp; return&nbsp; with the Amulet of Yendor.&nbsp; Your<br>
+
+reward for the completion&nbsp; of&nbsp; this&nbsp; task&nbsp; will&nbsp; be&nbsp; a&nbsp; full<br>
+
+membership in the local guild.&nbsp; In addition, you are allowed<br>
+
+to keep all the loot you bring back from the dungeons.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; In preparation for&nbsp; your&nbsp; journey,&nbsp; you&nbsp; are&nbsp; given&nbsp; an<br>
+
+enchanted&nbsp; mace,&nbsp; a bow, and a quiver of arrows taken from a<br>
+
+dragon's hoard in the far off Dark Mountains.&nbsp; You are&nbsp; also<br>
+
+outfitted&nbsp; with&nbsp; elf-crafted&nbsp; armor and given enough food to<br>
+
+reach the dungeons.&nbsp; You say goodbye to family&nbsp; and&nbsp; friends<br>
+
+for what may be the last time and head up the road.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; You set out on your&nbsp; way&nbsp; to&nbsp; the&nbsp; dungeons&nbsp; and&nbsp; after<br>
+
+several days of uneventful travel, you see the ancient ruins<br>
+
+that mark the entrance to the Dungeons of Doom.&nbsp; It is&nbsp; late<br>
+
+at&nbsp; night,&nbsp; so&nbsp; you&nbsp; make camp at the entrance and spend the<br>
+
+night sleeping under the open skies.&nbsp;&nbsp; In&nbsp; the&nbsp; morning&nbsp; you<br>
+
+gather&nbsp; your&nbsp; weapons, put on your armor, eat what is almost<br>
+
+your last food, and enter the dungeons.<br>
+
+<br>
+
+<h2>2.&nbsp; What is going on here?</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; You have just begun a game of rogue.&nbsp; Your goal&nbsp; is&nbsp; to<br>
+
+grab as much treasure as you can, find the Amulet of Yendor,<br>
+
+and get out of the Dungeons of Doom alive.&nbsp; On the screen, a<br>
+
+map&nbsp; of&nbsp; where&nbsp; you&nbsp; have been and what you have seen on the<br>
+
+current dungeon level is kept.&nbsp; As you explore more&nbsp; of&nbsp; the<br>
+
+level, it appears on the screen in front of you.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Rogue differs from most computer fantasy games in&nbsp; that<br>
+
+it&nbsp; is&nbsp; screen&nbsp; oriented.&nbsp; Commands are all one or two keys-<br>
+
+trokes[1] and the results of&nbsp; your&nbsp; commands&nbsp; are&nbsp; displayed<br>
+
+graphically&nbsp; on&nbsp; the&nbsp; screen&nbsp; rather than being explained in<br>
+
+words.[2]<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Another major difference between rogue and&nbsp; other&nbsp; com-<br>
+
+puter&nbsp; fantasy&nbsp; games&nbsp; is&nbsp; that once you have solved all the<br>
+
+puzzles in a standard fantasy game, it has lost most of&nbsp; its<br>
+
+excitement&nbsp; and&nbsp; it&nbsp; ceases&nbsp; to be fun.&nbsp; Rogue, on the other<br>
+
+hand, generates a new dungeon every time&nbsp; you&nbsp; play&nbsp; it&nbsp; and<br>
+
+even the author finds it an entertaining and exciting game.<br>
+
+<br>
+
+<h2>3.&nbsp; What do all those things on the screen mean?</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; In order to understand what is going on&nbsp; in&nbsp; rogue&nbsp; you<br>
+
+have to first get some grasp of what rogue is doing with the<br>
+
+screen.&nbsp; The rogue screen is intended to&nbsp; replace&nbsp; the&nbsp; "You<br>
+
+can see ..." descriptions of standard fantasy games.&nbsp; Figure<br>
+
+1 is a sample of what a rogue screen might look like.<br>
+
+<br>
+
+<h3>3.1.&nbsp; The bottom line</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; At the bottom line of the screen are a&nbsp; few&nbsp; pieces&nbsp; of<br>
+
+cryptic information describing your current status.&nbsp; Here is<br>
+
+an explanation of what these things mean:<br>
+
+<br>
+
+Level&nbsp; This number indicates how deep you have gone&nbsp; in&nbsp; the<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dungeon.&nbsp;&nbsp; It&nbsp; starts&nbsp; at&nbsp; one&nbsp; and goes up as you go<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; deeper into the dungeon.<br>
+
+<br>
+
+Gold&nbsp;&nbsp; The number of gold pieces you have&nbsp; managed&nbsp; to&nbsp; find<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and keep with you so far.<br>
+
+<br>
+
+&nbsp;&nbsp; [1] As opposed to pseudo English sentences.<br>
+
+&nbsp;&nbsp; [2] A minimum screen size of 24 lines by&nbsp; 80&nbsp; columns&nbsp; is<br>
+
+required.&nbsp;&nbsp; If&nbsp; the screen is larger, only the 24x80 section<br>
+
+will be used for the map.<br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ------------</span><br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; |..........+</span><br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; |..@....]..|</span><br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; |....B.....|</span><br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; |..........|</span><br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -----+------</span><br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp; &nbsp;Level: 1&nbsp; Gold: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hp: 12(12)&nbsp; Str: 16(16)&nbsp; Arm: 4&nbsp; Exp: 1/0</span><br style="font-family: courier new,courier,monospace;">
+
+<br style="font-family: courier new,courier,monospace;">
+
+<span style="font-family: courier new,courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Figure 1</span><br style="font-family: courier new,courier,monospace;">
+
+<br>
+
+<br>
+
+<br>
+
+Hp&nbsp;&nbsp;&nbsp;&nbsp; Your&nbsp; current&nbsp; and&nbsp; maximum&nbsp; health&nbsp; points.&nbsp;&nbsp; Health<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; points&nbsp; indicate&nbsp; how much damage you can take before<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you die.&nbsp; The more you get hit in a fight, the&nbsp; lower<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; they&nbsp; get.&nbsp;&nbsp; You can regain health points by resting.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The number in parentheses is the maximum number&nbsp; your<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; health points can reach.<br>
+
+<br>
+
+Str&nbsp;&nbsp;&nbsp; Your current&nbsp; strength&nbsp; and&nbsp; maximum&nbsp; ever&nbsp; strength.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This&nbsp; can be any integer less than or equal to 99, or<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; greater than or equal to 1.&nbsp; The higher&nbsp; the&nbsp; number,<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the&nbsp; stronger you are.&nbsp; The number in the parentheses<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is the maximum strength you have attained so far this<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; game.<br>
+
+<br>
+
+Arm&nbsp;&nbsp;&nbsp; Your current armor protection.&nbsp; This number indicates<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; how&nbsp; effective&nbsp; your&nbsp; armor is in stopping blows from<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unfriendly creatures.&nbsp; The higher this number is, the<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; more effective the armor.<br>
+
+<br>
+
+Exp&nbsp;&nbsp;&nbsp; These two numbers give your current experience&nbsp; level<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and&nbsp; experience&nbsp; points.&nbsp;&nbsp; As you do things, you gain<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; experience&nbsp; points.&nbsp;&nbsp; At&nbsp; certain&nbsp; experience&nbsp;&nbsp; point<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; totals,&nbsp; you&nbsp; gain&nbsp; an&nbsp; experience&nbsp; level.&nbsp;&nbsp; The more<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; experienced you are, the better you are able to fight<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and to withstand magical attacks.<br>
+
+<br>
+
+<h3>3.2.&nbsp; The top line</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The top line of the screen&nbsp; is&nbsp; reserved&nbsp; for&nbsp; printing<br>
+
+messages&nbsp;&nbsp; that&nbsp; describe&nbsp; things&nbsp; that&nbsp; are&nbsp; impossible&nbsp; to<br>
+
+represent visually.&nbsp; If you see&nbsp; a&nbsp; "--More--"&nbsp; on&nbsp; the&nbsp; top<br>
+
+line,&nbsp; this&nbsp; means that rogue wants to print another message<br>
+
+on the screen, but it wants to make certain&nbsp; that&nbsp; you&nbsp; have<br>
+
+read the one that is there first.&nbsp; To read the next message,<br>
+
+just type a space.<br>
+
+<br>
+
+<h3>3.3.&nbsp; The rest of the screen</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The rest of the screen is the map of the level&nbsp; as&nbsp; you<br>
+
+have&nbsp; explored&nbsp; it&nbsp; so&nbsp; far.&nbsp;&nbsp; Each&nbsp; symbol&nbsp; on&nbsp; the&nbsp; screen<br>
+
+represents something.&nbsp; Here is a list of&nbsp; what&nbsp; the&nbsp; various<br>
+
+symbols mean:<br>
+
+<br>
+
+@&nbsp;&nbsp;&nbsp; This symbol represents you, the adventurer.<br>
+
+<br>
+
+-|&nbsp;&nbsp; These symbols represent the walls of rooms.<br>
+
+<br>
+
++&nbsp;&nbsp;&nbsp; A door to/from a room.<br>
+
+<br>
+
+.&nbsp;&nbsp;&nbsp; The floor of a room.<br>
+
+<br>
+
+#&nbsp;&nbsp;&nbsp; The floor of a passage between rooms.<br>
+
+<br>
+
+*&nbsp;&nbsp;&nbsp; A pile or pot of gold.<br>
+
+<br>
+
+)&nbsp;&nbsp;&nbsp; A weapon of some sort.<br>
+
+<br>
+
+]&nbsp;&nbsp;&nbsp; A piece of armor.<br>
+
+<br>
+
+!&nbsp;&nbsp;&nbsp; A flask containing a magic potion.<br>
+
+<br>
+
+?&nbsp;&nbsp;&nbsp; A piece of paper, usually a magic scroll.<br>
+
+<br>
+
+=&nbsp;&nbsp;&nbsp; A ring with magic properties<br>
+
+<br>
+
+/&nbsp;&nbsp;&nbsp; A magical staff or wand<br>
+
+<br>
+
+^&nbsp;&nbsp;&nbsp; A trap, watch out for these.<br>
+
+<br>
+
+%&nbsp;&nbsp;&nbsp; A staircase to other levels<br>
+
+<br>
+
+:&nbsp;&nbsp;&nbsp; A piece of food.<br>
+
+<br>
+
+A-Z&nbsp; The uppercase letters represent the various inhabitants<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; of&nbsp; the Dungeons of Doom.&nbsp; Watch out, they can be nasty<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; and vicious.<br>
+
+<br>
+
+<h2>4.&nbsp; Commands</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Commands are given to rogue by typing one or two&nbsp; char-<br>
+
+acters.&nbsp;&nbsp; Most commands can be preceded by a count to repeat<br>
+
+them (e.g. typing "10s" will do ten searches).&nbsp; Commands for<br>
+
+which&nbsp; counts make no sense have the count ignored.&nbsp; To can-<br>
+
+cel a count&nbsp; or&nbsp; a&nbsp; prefix,&nbsp; type&nbsp; &lt;ESCAPE&gt;.&nbsp;&nbsp; The&nbsp; list&nbsp; of<br>
+
+commands is rather long, but it can be read at any time dur-<br>
+
+ing the game with the "?" command.&nbsp; Here it&nbsp; is&nbsp; for&nbsp; refer-<br>
+
+ence, with a short explanation of each command.<br>
+
+<br>
+
+?&nbsp;&nbsp;&nbsp; The help command.&nbsp; Asks for a character&nbsp; to&nbsp; give&nbsp; help<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; on.&nbsp;&nbsp; If you type a "*", it will list all the commands,<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; otherwise it will explain what the character you&nbsp; typed<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; does.<br>
+
+<br>
+
+/&nbsp;&nbsp;&nbsp; This is the "What is that on the screen?"&nbsp; command.&nbsp;&nbsp; A<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; "/"&nbsp; followed&nbsp; by&nbsp; any&nbsp; character&nbsp; that&nbsp; you see on the<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; level, will tell&nbsp; you&nbsp; what&nbsp; that&nbsp; character&nbsp; is.&nbsp;&nbsp; For<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; instance, typing "/@" will tell you that the "@" symbol<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; represents you, the player.<br>
+
+<br>
+
+h, H, ^H<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Move left.&nbsp; You move one space to the left.&nbsp; If you use<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; upper&nbsp; case&nbsp; "h",&nbsp; you will continue to move left until<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; you run into something.&nbsp; This works&nbsp; for&nbsp; all&nbsp; movement<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; commands&nbsp; (e.g.&nbsp; "L" means run in direction "l") If you<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; use the "control" "h", you will continue moving in&nbsp; the<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; specified&nbsp; direction until you pass something interest-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ing or run into a wall.&nbsp;&nbsp; You&nbsp; should&nbsp; experiment&nbsp; with<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; this,&nbsp; since it is a very useful command, but very dif-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ficult to describe.&nbsp; This also works for&nbsp; all&nbsp; movement<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; commands.<br>
+
+<br>
+
+j&nbsp;&nbsp;&nbsp; Move down.<br>
+
+<br>
+
+k&nbsp;&nbsp;&nbsp; Move up.<br>
+
+<br>
+
+l&nbsp;&nbsp;&nbsp; Move right.<br>
+
+<br>
+
+y&nbsp;&nbsp;&nbsp; Move diagonally up and left.<br>
+
+<br>
+
+u&nbsp;&nbsp;&nbsp; Move diagonally up and right.<br>
+
+<br>
+
+b&nbsp;&nbsp;&nbsp; Move diagonally down and left.<br>
+
+<br>
+
+n&nbsp;&nbsp;&nbsp; Move diagonally down and right.<br>
+
+<br>
+
+t&nbsp;&nbsp;&nbsp; Throw an object.&nbsp; This is a prefix command.&nbsp; When&nbsp; fol-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; lowed&nbsp; with&nbsp; a&nbsp; direction&nbsp; it&nbsp; throws&nbsp; an object in the<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; specified direction.&nbsp; (e.g. type "th"&nbsp; to&nbsp; throw&nbsp; some-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; thing to the left.)<br>
+
+<br>
+
+f&nbsp;&nbsp;&nbsp; Fight until someone dies.&nbsp; When followed with a&nbsp; direc-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; tion&nbsp; this will force you to fight the creature in that<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; direction until either you or it bites the big one.<br>
+
+<br>
+
+m&nbsp;&nbsp;&nbsp; Move onto something without picking it up.&nbsp;&nbsp; This&nbsp; will<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; move you one space in the direction you specify and, if<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; there is an object there you can pick up, it&nbsp; won't&nbsp; do<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; it.<br>
+
+<br>
+
+z&nbsp;&nbsp;&nbsp; Zap prefix.&nbsp; Point a staff or wand in a given direction<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; and&nbsp; fire&nbsp; it.&nbsp;&nbsp; Even&nbsp; non-directional&nbsp; staves&nbsp; must be<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; pointed in some direction to be used.<br>
+
+<br>
+
+^&nbsp;&nbsp;&nbsp; Identify trap command.&nbsp; If a trap is on&nbsp; your&nbsp; map&nbsp; and<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; you&nbsp; can't&nbsp; remember what type it is, you can get rogue<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; to remind you by getting next to it and typing "^" fol-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; lowed&nbsp; by&nbsp; the&nbsp; direction that would move you on top of<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; it.<br>
+
+<br>
+
+s&nbsp;&nbsp;&nbsp; Search for traps and secret doors.&nbsp; Examine each&nbsp; space<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; immediately adjacent to you for the existence of a trap<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; or secret door.&nbsp; There is a large chance that&nbsp; even&nbsp; if<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; there&nbsp; is&nbsp; something&nbsp; there,&nbsp; you won't find it, so you<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; might have to search a while before you find something.<br>
+
+<br>
+
+&gt;&nbsp;&nbsp;&nbsp; Climb down a staircase to the next level.&nbsp; Not surpris-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ingly,&nbsp; this&nbsp; can&nbsp; only&nbsp; be done if you are standing on<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; staircase.<br>
+
+<br>
+
+&lt;&nbsp;&nbsp;&nbsp; Climb up a staircase to the level above.&nbsp; This can't be<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; done without the Amulet of Yendor in your possession.<br>
+
+<br>
+
+.&nbsp;&nbsp;&nbsp; Rest.&nbsp; This is the "do nothing" command.&nbsp; This is&nbsp; good<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; for waiting and healing.<br>
+
+<br>
+
+,&nbsp;&nbsp;&nbsp; Pick up something.&nbsp; This&nbsp; picks&nbsp; up&nbsp; whatever&nbsp; you&nbsp; are<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; currently&nbsp; standing on, if you are standing on anything<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; at all.<br>
+
+<br>
+
+i&nbsp;&nbsp;&nbsp; Inventory.&nbsp; List what you are carrying in your pack.<br>
+
+<br>
+
+I&nbsp;&nbsp;&nbsp; Selective inventory.&nbsp; Tells you what a single&nbsp; item&nbsp; in<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; your pack is.<br>
+
+<br>
+
+q&nbsp;&nbsp;&nbsp; Quaff one of the potions you are carrying.<br>
+
+<br>
+
+r&nbsp;&nbsp;&nbsp; Read one of the scrolls in your pack.<br>
+
+<br>
+
+e&nbsp;&nbsp;&nbsp; Eat food from your pack.<br>
+
+<br>
+
+w&nbsp;&nbsp;&nbsp; Wield a weapon.&nbsp; Take a weapon out&nbsp; of&nbsp; your&nbsp; pack&nbsp; and<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; carry&nbsp; it&nbsp; for use in combat, replacing the one you are<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; currently using (if any).<br>
+
+<br>
+
+W&nbsp;&nbsp;&nbsp; Wear armor.&nbsp; You can only wear one suit of armor&nbsp; at&nbsp; a<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; time.&nbsp; This takes extra time.<br>
+
+<br>
+
+T&nbsp;&nbsp;&nbsp; Take armor off.&nbsp; You can't remove armor that is cursed.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; This takes extra time.<br>
+
+<br>
+
+P&nbsp;&nbsp;&nbsp; Put on a ring.&nbsp; You can wear only two rings at&nbsp; a&nbsp; time<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; (one&nbsp; on&nbsp; each hand).&nbsp; If you aren't wearing any rings,<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; this command will ask you which hand you want&nbsp; to&nbsp; wear<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; it&nbsp; on, otherwise, it will place it on the unused hand.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The program assumes that you wield your sword&nbsp; in&nbsp; your<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; right hand.<br>
+
+<br>
+
+R&nbsp;&nbsp;&nbsp; Remove a ring.&nbsp; If you are only wearing one ring,&nbsp; this<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; command&nbsp; takes it off.&nbsp; If you are wearing two, it will<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ask you which one you wish to remove,<br>
+
+<br>
+
+d&nbsp;&nbsp;&nbsp; Drop an object.&nbsp; Take something out of&nbsp; your&nbsp; pack&nbsp; and<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; leave&nbsp; it&nbsp; lying&nbsp; on&nbsp; the&nbsp; floor.&nbsp;&nbsp; Only one object can<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; occupy each space.&nbsp; You cannot drop a cursed object&nbsp; at<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; all if you are wielding or wearing it.<br>
+
+<br>
+
+c&nbsp;&nbsp;&nbsp; Call an object something.&nbsp; If you have a type of object<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; in&nbsp; your&nbsp; pack&nbsp; which&nbsp; you&nbsp; wish&nbsp; to remember something<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; about, you can use the call command to give a&nbsp; name&nbsp; to<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; that&nbsp; type&nbsp; of&nbsp; object.&nbsp;&nbsp; This is usually used when you<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; figure out what a potion, scroll,&nbsp; ring,&nbsp; or&nbsp; staff&nbsp; is<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; after you pick it up but before it is truly identified.<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Each type of scroll and potion will&nbsp; become&nbsp; identified<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; after its first use.<br>
+
+<br>
+
+o&nbsp;&nbsp;&nbsp; Examine and&nbsp; set&nbsp; options.&nbsp;&nbsp; This&nbsp; command&nbsp; is&nbsp; further<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; explained in the section on options.<br>
+
+<br>
+
+^R&nbsp;&nbsp; Redraws the screen.&nbsp; Useful&nbsp; if&nbsp; spurious&nbsp; messages&nbsp; or<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; transmission errors have messed up the display.<br>
+
+<br>
+
+^P&nbsp;&nbsp; Print last message.&nbsp; Useful when a&nbsp; message&nbsp; disappears<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; before&nbsp; you&nbsp; can&nbsp; read&nbsp; it.&nbsp; Consecutive repetitions of<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; this command will reveal the last five messages.<br>
+
+<br>
+
+&lt;ESCAPE&gt;<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Cancel a command, prefix, or count.<br>
+
+<br>
+
+!&nbsp;&nbsp;&nbsp; Escape to a shell for some commands.<br>
+
+<br>
+
+Q&nbsp;&nbsp;&nbsp; Quit.&nbsp; Leave the game.<br>
+
+<br>
+
+S&nbsp;&nbsp;&nbsp; Save the current game in&nbsp; a&nbsp; file.&nbsp;&nbsp; It&nbsp; will&nbsp; ask&nbsp; you<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; whether you wish to use the default save file.&nbsp; Caveat:<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Rogue won't let you start up a copy of&nbsp; a&nbsp; saved&nbsp; game,<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; and&nbsp; it removes the save file as soon as you start up a<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; restored game.&nbsp; This is to prevent people from saving a<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; game just before a dangerous position and then restart-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; ing it if they die.&nbsp; To restore a saved game, give&nbsp; the<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; file name as an argument to rogue.&nbsp; As in<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % rogue savefile<br>
+
+<br>
+
+v&nbsp;&nbsp;&nbsp; Prints the program version number.<br>
+
+<br>
+
+)&nbsp;&nbsp;&nbsp; Print the weapon you are currently wielding<br>
+
+<br>
+
+]&nbsp;&nbsp;&nbsp; Print the armor you are currently wearing<br>
+
+<br>
+
+=&nbsp;&nbsp;&nbsp; Print the rings you are currently wearing<br>
+
+<br>
+
+<h2>5.&nbsp; Rooms</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Rooms in the dungeons are lit as you enter them.&nbsp;&nbsp; Upon<br>
+
+leaving a room, all monsters inside the room are erased from<br>
+
+the screen.&nbsp; In the darkness of a corridor, you can only see<br>
+
+one space in all directions around you.<br>
+
+<br>
+
+<h2>6.&nbsp; Fighting</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; If you see a monster and you wish&nbsp; to&nbsp; fight&nbsp; it,&nbsp; just<br>
+
+attempt&nbsp; to run into it.&nbsp; Many times a monster you find will<br>
+
+mind its own business unless you attack it.&nbsp; It is often the<br>
+
+case that discretion is the better part of valor.<br>
+
+<br>
+
+<h2>7.&nbsp; Objects you can find</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; When you find something in the dungeon, it is common to<br>
+
+want&nbsp; to&nbsp; pick the object up.&nbsp; This is accomplished in rogue<br>
+
+by walking over the object (unless you use the&nbsp; "m"&nbsp; prefix,<br>
+
+see&nbsp; above).&nbsp;&nbsp; If you are carrying too many things, the pro-<br>
+
+gram will tell you and it won't pick up the&nbsp; object,&nbsp; other-<br>
+
+wise&nbsp; it will add it to your pack and tell you what you just<br>
+
+picked up.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Many of the&nbsp; commands&nbsp; that&nbsp; operate&nbsp; on&nbsp; objects&nbsp; must<br>
+
+prompt you to find out which object you want to use.&nbsp; If you<br>
+
+change your mind and don't want to&nbsp; do&nbsp; that&nbsp; command&nbsp; after<br>
+
+all, just type an &lt;ESCAPE&gt; and the command will be aborted.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Some objects, like armor and weapons, are&nbsp; easily&nbsp; dif-<br>
+
+ferentiated.&nbsp;&nbsp; Others,&nbsp; like&nbsp; scrolls and potions, are given<br>
+
+labels which vary according to type.&nbsp; During a game, any two<br>
+
+of&nbsp; the same kind of object with the same label are the same<br>
+
+type.&nbsp; However, the labels will vary from game to game.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; When you use one&nbsp; of&nbsp; these&nbsp; labeled&nbsp; objects,&nbsp; if&nbsp; its<br>
+
+effect may be obvious.&nbsp; Potions or scrolls will become iden-<br>
+
+tified at this point, but not other items.&nbsp; You may want&nbsp; to<br>
+
+call&nbsp; these&nbsp; other&nbsp; items something so you will recognize it<br>
+
+later, you can use the "call" command (see above).<br>
+
+<br>
+
+<h3>7.1.&nbsp; Weapons</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Some weapons, like arrows, come in&nbsp; bunches,&nbsp; but&nbsp; most<br>
+
+come&nbsp; one&nbsp; at&nbsp; a&nbsp; time.&nbsp;&nbsp; In order to use a weapon, you must<br>
+
+wield it.&nbsp; To fire an arrow out of a&nbsp; bow,&nbsp; you&nbsp; must&nbsp; first<br>
+
+wield the bow, then throw the arrow.&nbsp; You can only wield one<br>
+
+weapon at a time, but you can't change weapons&nbsp; if&nbsp; the&nbsp; one<br>
+
+you&nbsp; are&nbsp; currently wielding is cursed.&nbsp; The commands to use<br>
+
+weapons are "w" (wield) and "t" (throw).<br>
+
+<br>
+
+<h3>7.2.&nbsp; Armor</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; There are various sorts of armor lying&nbsp; around&nbsp; in&nbsp; the<br>
+
+dungeon.&nbsp;&nbsp; Some of it is enchanted, some is cursed, and some<br>
+
+is just normal.&nbsp; Different armor types have different&nbsp; armor<br>
+
+protection.&nbsp;&nbsp; The higher the armor protection, the more pro-<br>
+
+tection the armor affords against&nbsp; the&nbsp; blows&nbsp; of&nbsp; monsters.<br>
+
+Here&nbsp; is&nbsp; a list of the various armor types and their normal<br>
+
+armor protection:<br>
+
+<br>
+
+<table style="text-align: left; width: 300px;" border="1" cellspacing="2" cellpadding="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: center;"><span style="font-weight: bold;">Type </span><br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><span style="font-weight: bold;">Protection</span> <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">None&nbsp;&nbsp; <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">0</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Leather armor<br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">1<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Studded&nbsp; leather&nbsp; /&nbsp; Ring&nbsp; mail <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">2<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Scale mail</td>
+      <td style="vertical-align: top; text-align: center;">3<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Chain&nbsp; mail</td>
+      <td style="vertical-align: top; text-align: center;">4<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Banded&nbsp; mail <br>
+      </td>
+      <td style="vertical-align: top; text-align: center;">5<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Splint mail</td>
+      <td style="vertical-align: top; text-align: center;">6<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Plate mail</td>
+      <td style="vertical-align: top; text-align: center;">7<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+If a piece of armor is enchanted, its armor protection&nbsp; will<br>
+
+be&nbsp; higher&nbsp; than&nbsp; normal.&nbsp; If a suit of armor is cursed, its<br>
+
+armor protection will be lower, and you will not be able&nbsp; to<br>
+
+remove it.&nbsp; However, not all armor with a protection that is<br>
+
+lower than normal is cursed.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The commands to use weapons&nbsp; are&nbsp; "W"&nbsp; (wear)&nbsp; and&nbsp; "T"<br>
+
+(take off).<br>
+
+<br>
+
+<h3>7.3.&nbsp; Scrolls</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Scrolls come&nbsp; with&nbsp; titles&nbsp; in&nbsp; an&nbsp; unknown&nbsp; tongue[3].<br>
+
+After&nbsp; you read a scroll, it disappears from your pack.&nbsp; The<br>
+
+command to use a scroll is "r" (read).<br>
+
+<br>
+
+<h3>7.4.&nbsp; Potions</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Potions are labeled by the color of the&nbsp; liquid&nbsp; inside<br>
+
+the flask.&nbsp; They disappear after being quaffed.&nbsp; The command<br>
+
+to use a scroll is "q" (quaff).<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+&nbsp;&nbsp; [3] Actually, it's a dialect spoken only by&nbsp; the&nbsp; twenty-<br>
+
+seven&nbsp; members&nbsp; of a tribe in Outer Mongolia, but you're not<br>
+
+supposed to know that.<br>
+
+<br>
+
+<h3>7.5.&nbsp; Staves and Wands</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Staves and wands do the same kinds of&nbsp; things.&nbsp;&nbsp; Staves<br>
+
+are&nbsp; identified&nbsp; by a type of wood; wands by a type of metal<br>
+
+or bone.&nbsp; They are generally things you want to do to&nbsp; some-<br>
+
+thing&nbsp; over&nbsp; a long distance, so you must point them at what<br>
+
+you wish to&nbsp; affect&nbsp; to&nbsp; use&nbsp; them.&nbsp;&nbsp; Some&nbsp; staves&nbsp; are&nbsp; not<br>
+
+affected&nbsp; by the direction they are pointed, though.&nbsp; Staves<br>
+
+come with multiple magic charges, the number&nbsp; being&nbsp; random,<br>
+
+and when they are used up, the staff is just a piece of wood<br>
+
+or metal.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The command to use a wand or staff is "z" (zap)<br>
+
+<br>
+
+<h3>7.6.&nbsp; Rings</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Rings are very useful items, since they are&nbsp; relatively<br>
+
+permanent&nbsp; magic,&nbsp; unlike&nbsp; the&nbsp; usually&nbsp; fleeting effects of<br>
+
+potions, scrolls, and staves.&nbsp; Of course, the bad rings&nbsp; are<br>
+
+also&nbsp; more&nbsp; powerful.&nbsp;&nbsp; Most&nbsp; rings also cause you to use up<br>
+
+food more rapidly, the rate varying with the type&nbsp; of&nbsp; ring.<br>
+
+Rings&nbsp; are differentiated by their stone settings.&nbsp; The com-<br>
+
+mands to use rings are "P" (put on) and "R" (remove).<br>
+
+<br>
+
+<h3>7.7.&nbsp; Food</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Food is necessary to keep you going.&nbsp;&nbsp; If&nbsp; you&nbsp; go&nbsp; too<br>
+
+long&nbsp; without&nbsp; eating&nbsp; you will faint, and eventually die of<br>
+
+starvation.&nbsp; The command to use food is "e" (eat).<br>
+
+<br>
+
+<h2>8.&nbsp; Options</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Due to variations in personal tastes and conceptions of<br>
+
+the&nbsp; way&nbsp; rogue should do things, there are a set of options<br>
+
+you can set that cause rogue to behave in various&nbsp; different<br>
+
+ways.<br>
+
+<br>
+
+<h3>8.1.&nbsp; Setting the options</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; There are two ways to set the options.&nbsp;&nbsp; The&nbsp; first&nbsp; is<br>
+
+with&nbsp; the&nbsp; "o"&nbsp; command&nbsp; of&nbsp; rogue;&nbsp; the&nbsp; second is with the<br>
+
+"ROGUEOPTS" environment variable[4].<br>
+
+<br>
+
+<h4>8.1.1.&nbsp; Using the `o' command</h4>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; When you type "o" in rogue, it clears&nbsp; the&nbsp; screen&nbsp; and<br>
+
+displays&nbsp; the current settings for all the options.&nbsp; It then<br>
+
+places the cursor by the value of the first option and waits<br>
+
+<br>
+
+&nbsp;&nbsp; [4] On Version 6 systems, there is no equivalent&nbsp; of&nbsp; the<br>
+
+ROGUEOPTS feature.<br>
+
+<br>
+
+for you to type.&nbsp; You can type a &lt;RETURN&gt; which means to&nbsp; go<br>
+
+to&nbsp; the next option, a "-" which means to go to the previous<br>
+
+option, an &lt;ESCAPE&gt; which means to return to&nbsp; the&nbsp; game,&nbsp; or<br>
+
+you&nbsp; can&nbsp; give the option a value.&nbsp; For boolean options this<br>
+
+merely involves typing "t" for true or "f" for&nbsp; false.&nbsp;&nbsp; For<br>
+
+string options, type the new value followed by a &lt;RETURN&gt;.<br>
+
+<br>
+
+<h4>8.1.2.&nbsp; Using the ROGUEOPTS variable</h4>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The ROGUEOPTS variable is a string containing&nbsp; a&nbsp; comma<br>
+
+separated&nbsp; list&nbsp; of&nbsp; initial values for the various options.<br>
+
+Boolean variables can be turned on by listing their name&nbsp; or<br>
+
+turned&nbsp; off by putting a "no" in front of the name.&nbsp; Thus to<br>
+
+set up an environment variable so that jump is on, passgo is<br>
+
+off, and the name is set to "Blue Meanie", use the command<br>
+
+&nbsp;&nbsp; % setenv ROGUEOPTS "jump,nopassgo,name=Blue Meanie"[5]<br>
+
+<br>
+
+<h3>8.2.&nbsp; Option list</h3>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Here is a list of the options&nbsp; and&nbsp; an&nbsp; explanation&nbsp; of<br>
+
+what&nbsp; each&nbsp; one&nbsp; is&nbsp; for.&nbsp;&nbsp; The&nbsp; default&nbsp; value&nbsp; for each is<br>
+
+enclosed in square brackets.&nbsp; For character string&nbsp; options,<br>
+
+input over forty characters will be ignored.<br>
+
+<br>
+
+jump [nojump]<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; If this option&nbsp; is&nbsp; set,&nbsp; running&nbsp; moves&nbsp; will&nbsp; not&nbsp; be<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; displayed&nbsp; until&nbsp; you&nbsp; reach the end of the move.&nbsp; This<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; saves considerable cpu and display time.&nbsp;&nbsp; This&nbsp; option<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; defaults to jump if you are using a slow terminal.<br>
+
+<br>
+
+passgo [nopassgo]<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Follow turnings in passageways.&nbsp; If you run in&nbsp; a&nbsp; pas-<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; sage&nbsp; and&nbsp; you run into stone or a wall, rogue will see<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; if it can turn to the right or left.&nbsp; If&nbsp; it&nbsp; can&nbsp; only<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; turn&nbsp; one&nbsp; way,&nbsp; it will turn that way.&nbsp; If it can turn<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; either or neither, it will stop.&nbsp;&nbsp; This&nbsp; algorithm&nbsp; can<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; sometimes&nbsp; lead to slightly confusing occurrences which<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; is why it defaults to nopassgo.<br>
+
+<br>
+
+skull [skull]<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Print out the skull at the end if you get killed.&nbsp; This<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; is nice but slow, so you can turn it off if you like.<br>
+
+<br>
+
+name [account name]<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; This is the name of your character.&nbsp; It is used if&nbsp; you<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; get on the top ten scorer's list.<br>
+
+<br>
+
+&nbsp;&nbsp; [5] For those of you who use the Bourne shell sh (1), the<br>
+
+commands would be<br>
+
+&nbsp;&nbsp; $ ROGUEOPTS="jump,nopassgo,name=Blue Meanie"<br>
+
+&nbsp;&nbsp; $ export ROGUEOPTS<br>
+
+<br>
+
+fruit [slime-mold]<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; This should hold the name of a&nbsp; fruit&nbsp; that&nbsp; you&nbsp; enjoy<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; eating.&nbsp; It is basically a whimsey that rogue uses in a<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; couple of places.<br>
+
+<br>
+
+file [~/rogue.save]<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The default file name for saving&nbsp; the&nbsp; game.&nbsp;&nbsp; If&nbsp; your<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; phone&nbsp; is hung up by accident, rogue will automatically<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; save the game in this file.&nbsp; The file&nbsp; name&nbsp; may&nbsp; start<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; with the special character "~" which expands to be your<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; home directory.<br>
+
+<br>
+
+<h2>9.&nbsp; Scoring</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Rogue maintains a list of the&nbsp; top&nbsp; scoring&nbsp; people&nbsp; or<br>
+
+scores&nbsp; on&nbsp; your&nbsp; machine.&nbsp; If you score higher than someone<br>
+
+else on this list, or better&nbsp; your&nbsp; previous&nbsp; score&nbsp; on&nbsp; the<br>
+
+list,&nbsp; you&nbsp; will&nbsp; be inserted in the proper place under your<br>
+
+current name.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; If you quit the game, you get out with all of your gold<br>
+
+intact.&nbsp;&nbsp; If,&nbsp; however,&nbsp; you&nbsp; get&nbsp; killed in the Dungeons of<br>
+
+Doom, your body is forwarded to your next-of-kin, along with<br>
+
+90%&nbsp; of&nbsp; your&nbsp; gold; ten percent of your gold is kept by the<br>
+
+Dungeons' wizard as a fee[6].&nbsp; This should make you consider<br>
+
+whether&nbsp; you&nbsp; want&nbsp; to take one last hit at that monster and<br>
+
+possibly live, or quit and thus stop with whatever you have.<br>
+
+If&nbsp; you quit, you do get all your gold, but if you swing and<br>
+
+live, you might find more.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; If&nbsp; you&nbsp; just&nbsp; want&nbsp;
+to&nbsp; see&nbsp; what&nbsp; the&nbsp;&nbsp; current&nbsp;&nbsp; top<br>
+
+players/games list is, you can type<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % rogue -s<br>
+
+<br>
+
+<h2>10.&nbsp; Acknowledgements</h2>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Rogue was originally conceived of by Glenn Wichman&nbsp; and<br>
+
+Michael&nbsp; Toy.&nbsp;&nbsp; Ken Arnold and Michael Toy then smoothed out<br>
+
+the user interface, and added jillions of new features.&nbsp;&nbsp; We<br>
+
+would&nbsp; like&nbsp; to&nbsp; thank&nbsp; Bob&nbsp; Arnold,&nbsp; Michelle&nbsp; Busch,&nbsp; Andy<br>
+
+Hatcher, Kipp Hickman, Mark Horton, Daniel Jensen, Bill Joy,<br>
+
+Joe&nbsp; Kalash,&nbsp; Steve&nbsp; Maurer,&nbsp; Marty&nbsp; McNary, Jan Miller, and<br>
+
+Scott Nelson for their ideas and assistance;&nbsp; and&nbsp; also&nbsp; the<br>
+
+teeming&nbsp; multitudes who graciously ignored work, school, and<br>
+
+social life to play rogue&nbsp; and&nbsp; send&nbsp; us&nbsp; bugs,&nbsp; complaints,<br>
+
+suggestions, and just plain flames.&nbsp; And also Mom.<br>
+
+<br>
+
+<br>
+
+&nbsp;&nbsp; [6] The Dungeon's wizard is named Wally the Wonder&nbsp; Badg-<br>
+
+er.&nbsp;&nbsp; Invocations&nbsp; should&nbsp; be accompanied by a sizable dona-<br>
+
+tion.<br>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The public domain version of rogue now distributed with<br>
+
+Berkeley UNIX was written by Timothy Stoehr.<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+</body></html>

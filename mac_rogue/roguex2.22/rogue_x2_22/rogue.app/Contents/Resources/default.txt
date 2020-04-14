@@ -1,0 +1,631 @@
+		Rogue Message file
+
+You can't include control-codes.
+Max length of line is 79 bytes.
+
+Message version
+1	"Message English version"
+Type of Item
+2	"food "
+3	"scroll%s "
+4	"potion%s "
+5	"wand "
+6	"staff "
+7	"armor "
+8	"ring "
+9	"amlet "
+file: main.c
+10	"Hello %s, welcome to the Dungeons of Doom..."
+
+file: init.c
+--More-- (now only in message.c)
+11	"--More--"
+byebye_string: quit from interrupt
+12	"Okay, bye bye!"
+init()
+pen name 'pn' is NULL or longer than 30
+13	"Hey!  Who are you?"
+screen too small (UNIX)
+14	"Must be played on 24x80 screen"
+onintr()
+15	"Interrupt"
+option ('o' command)
+16	"Your favorite fruit"
+env_get_value
+17	"Cannot alloc() memory"
+
+file: hit.c
+mon_hit()	Monster's attack
+18	"The %s misses"
+19	"The %s hit"
+20	""
+21	""
+rogue_hit()	Player's attack
+22	"You miss.  "
+23	"You hit.  "
+mon_damage()
+24	"Defeated the %s"
+fight()
+25	"I see no monster there"
+
+file: invent.c
+inventory()
+26	"Your pack is empty"
+get_desc()
+27	"The Amulet of Yendor "
+28	"%d pieces of gold"	
+29	"%d "
+30	"%d rations of "
+31	"Some "
+32	"some "
+33	"titled "
+34	"called "
+35	"(weapon in hand)"
+36	"(being worn)"
+37	"(on left hand)"
+38	"(on right hand)"
+get_wand_and_ring_materials()
+39	""	not used	
+40	""	not used	
+single_inv()
+41	"Inventory what?"
+42	"No such item."	
+inv_armor_weapon()
+43	"Not wielding anything"
+44	"Not wearing anything"
+discoverd()
+45	"What type?"
+46	"Nothing discovered"
+47	" Nothing about %s"	
+
+file: level.c
+drop_check()
+48	"You're floating in the air!"
+49	"I see no way down"
+check_up()
+50	"I see no way up"
+51	"Your way is magically blocked"
+52	"You feel a wrenching sensation in your gut"
+add_exp()
+53	"Welcome to level %d"
+show_average_hp()
+54	"R-Hp: %d.%02d, E-Hp: %d.%02d (!: %d, V: %d)"
+
+file: message.c
+get_direction()
+55	"Direction?"
+print_stats()
+56	"Level: "
+57	"Gold: "
+58	"Hp: "
+59	"Str: "
+60	"Arm: "
+61	"Exp: "
+get_status_line()
+62	""
+monster.c
+mon_name()
+63	"something"
+create_monster()
+64	"You hear a faint cry of anguish in the distance"
+aggravate()
+65	"You hear a high pitched humming noise"
+
+file: move.c
+toplevel
+66	"You can move again"
+one_move_rogue()
+67	"You are being held"
+68	"You are still stuck in the bear trap"
+69	""
+70	"Moved onto "
+check_hunger()
+71	"Hungry"
+72	"Hungry"
+73	"Weak"
+74	"Weak"
+75	"Faint"
+76	"Faint"	
+77	"You faint"
+reg_move()
+78	"You float gently to the ground"
+79	"You feel yourself slowing down"
+
+file: object.c
+name_of()
+80	"unknown "
+new_object_for_wizard()
+81	"Pack full"
+82	"Type of object?"
+83	"Which kind of %s?"
+84	"weapon"
+
+file: pack.c
+toplevel
+85	"You can't, it appears to be cursed"
+pick_up()
+86	"The scroll turns to dust as you pick it up"
+87	"Pack too full"
+drop()
+88	"There's already something there"
+89	"You have nothing to drop"
+90	"Drop what?"
+91	"No such item."
+92	"Dropped "
+pack_letter()
+93	"Nothing appropriate"
+take_off()
+94	"Was wearing "
+95	"Not wearing any"
+wear()
+96	"You're already wearing some"
+97	"Wear what?"
+98	"No such item."
+99	"You can't wear that"
+100	"Wearing "
+wield()
+101	"Wield what?"
+102	"No such item."
+103	"You can't wield %s"
+104	"armor"
+105	"rings"
+106	"In use"
+107	"Wielding "
+call_it()
+108	"Call what?"
+109	"No such item."
+110	"Surely you already know what that's called"
+111	"Call it:"
+kick_into_pack()
+112	"Nothing here"
+113	"You're floating in the air!"
+114	""
+file: play.c
+toplevel
+115	"Unknown command"
+
+Help messages
+116	"?		print help			>   go down a staircase"
+117	"/		identify object			<   go up a staircase"
+118	"h, j, k, l	left, down, up, left		.   rest for a turn"
+119	"y, u, b, n	move diagonally			,   pick something up"
+120	"<SHIFT><dir>	run that way			s   search trap/secret door"
+121	"<CTRL><dir>	run till adjacent		i   inventory"
+122	"f<dir>		fight till death or near death	I   inventory single item"
+123	"F<dir>		fight till either of you dies	q   quaff potion"
+124	"t<dir>		throw something			r   read scroll"
+125	"m<dir>		move onto without picking up	e   eat food"
+126	"z<dir>		zap a wand in a direction	w   wield a weapon"
+127	"^<dir>		identify trap type		W   wear armor"
+128	"<CTRL>P 	repeat last message		T   take armor off"
+129	"<CTRL>R 	redraw screen			P   put on ring"
+130	"<CTRL>D 	save screen to file		R   remove ring"
+131	"<ESC>		cancel command			d   drop object"
+132	"a		repeat last command		c   call object"
+133	"D		recall what's been discovered	)   print current weapon"
+134	"S		save game			]   print current armor"
+135	"Q		quit				=   print current rings"
+136	"v		print version information	@   print current stats"
+137	"!		shell escape			o   examine/set options"
+
+Characters
+138	"You"
+139	"floor of a room"
+140	"wall of a room"
+141	"wall of a room", "door"
+142	"passage"
+143	"staircase"
+144	"secret trap"
+145	"a pile or pot of gold"
+146	"food ration"
+147	"an armor"
+148	"a weapon"
+149	"a scroll"
+151	"a potion"
+152	"a wand or a staff"
+153	"a ring"
+154	"the Amulet of Yendor"
+
+155	"Which character?"
+
+dosshell()
+MS-DOS, HUMAN
+156	"[ Type exit to return to rogue. ]"
+	"[ Type \"exit\" to return to rogue. ]"	\ Can not use
+UNIX
+157	"[ Exit shell to return to rogue. ]"
+
+file: ring.c
+toplevel
+158	 "Left or right hand?"
+159	"There's no ring on that hand"
+put_on_ring()
+160	"Wearing two rings already"
+161	"Put on what?"
+162	"No such item."	
+163	"That's not a ring"
+164	"That ring is already being worn"
+165	"There's already a ring on that hand"
+do_put_on()
+166	"Removed "
+inv_rings()
+167	"Not wearing any rings"
+
+file: score.c
+killed_by()
+ 
+168	"Died of"
+169	"Died of" 	to 173
+170	"Killed by a" 	to 174
+171	"Quit" 	to 175
+172	"hypothermia"
+173	"starvation"
+174	"dart"
+175	""
+
+176	"killed by a"
+
+177	" REST "
+178	"  IN  "
+179	"PEACE "
+180	"%ld Au" 
+181	" with %ld gold"
+
+182	"     Congratulations,  you have made it to the light of day!   "
+183	"You have joined the elite ranks of those who have escaped the  "
+184	"Dungeons of Doom  alive.  You journey home  and sell all your  "
+185	"loot at a great profit and are admitted to the Fighters' Guild."
+
+put_scores()
+186	"Cannot read/create score file"
+187	"Top  Ten  Scores"
+ TOPSCO ‚Å‚È‚¢‚Æ‚«‚Í "Top  Ten  Rogueists"
+188	"Rank   Score   Name"
+insert_score()
+189	"with Amulet"
+190	" on level %d "
+191	""
+192	"died of hypothermia"
+193	"died of starvation"
+194	"killed by a dart"
+195	"quit"
+196	"a total winner"
+197	"killed by "
+sell_pack()
+198	"Value      Item"
+sf_error()
+199	"Sorry, score file is out of order"
+file: spechit.c
+toplevel
+200	"flame"
+rust()
+201	"The rust vanishes instantly"
+202	"Your armor weakens"
+freeze()
+203	"You are frozen"
+steal_gold()
+204	"Your purse feels lighter"
+steal_item()
+205	"She stole "
+check_imitator()
+206	"Wait, that's a %s!"
+sting()
+207	"The %s's bite has weakened you"
+drain_life()
+208	"You feel weaker"
+m_confuse()
+209	"The gaze of the %s has confused you"
+
+file: throw.c
+throw()
+210	"Throw what?"
+211	"No such item."
+throw_at_monster()
+212	"The %s"
+213	"misses.  "
+214	"hit.  "
+flop_weapon()
+215	"The %svanishes as it hits the ground"
+
+file: trap.c
+Informations of trap
+toplevel
+216	"trap door"
+217	"You fell down a trap"
+218	"bear trap"
+219	"You are caught in a bear trap"
+220	"teleport trap"
+221	"Teleport"
+222	"poison dart trap"
+223	"A small dart just hit you in the shoulder"
+224	"sleeping gas trap"
+225	"A strange white mist envelopes you and you fall asleep"
+226	"rust trap"
+227	"A gush of water hits you on the head"
+
+trap_player()
+228	"The trap failed"
+id_trap()
+229	"No trap there"
+
+file: use.c
+toplevel
+230	"You have a strange feeling for a moment, then it passes"
+quaff()
+231	"Quaff what?"
+232	"No such item."
+233	"You can't drink that"
+234	"You feel stronger now, what bulging muscles!"
+235	"This tastes great, you feel warm all over"
+236	"You begin to feel better"
+237	"You begin to feel much better"
+238	"You feel very sick now"
+239	"Oh wow, everything seems so cosmic!"
+240	"What a trippy feeling"
+241	"Wait, what's going on here. Huh? What? Who?"
+242	"You start to float in the air"
+243	"You feel yourself moving much faster"
+244	"Hmm, this potion tastes like %sjuice"
+read_scroll()
+245	"Read what?"
+246	"No such item."	
+247	"You can't read that"
+248	"You hear a maniacal laughter in the distance"
+249	"Your %sglow%s %sfor a moment"
+250	"Your hands tingle"
+251	"Your armor glows %sfor a moment"
+252	"Your skin crawls"
+253	"This is a scroll of identify"
+254	"You fall asleep"
+255	"Your armor is covered by a shimmering gold shield"
+256	"Your acne seems to have disappeared"
+257	"You feel as though someone is watching over you"
+258	"You feel in touch with the universal oneness"
+259	"This scroll seems to have a map on it"
+idntfy()
+260	"What would you like to identify?"
+261	"No such item, try again"
+eat()
+262	"Eat what?"
+263	"No such item."
+264	"You can't eat that"
+265	"Yum, that tasted good"
+266	"Yum, that tasted good"
+267	"My, that was a yummy %s"
+268	"Yuk, that food tasted awful"
+hold_monster()
+269	"You feel a strange sense of loss"
+270	"The monster freezes"
+271	"The monsters around you freeze"
+unhallucinate()
+272	"Everything looks SO boring now"
+unblind()
+273	"The veil of darkness lifts"
+go_blind()
+274	"A cloak of darkness falls around you"
+get_ehch_color()
+275	"blue "
+uncunfuse()
+276	"You feel less trippy now"
+277	"You feel less confused now"
+
+file: zap.c
+zapp()
+278	"Zap with what?"
+279	"No such item."
+280	"You can't zap with that"
+281	"Nothing happens"
+zap_monster()
+282	"Nothing happens"
+
+Monsters
+307	"aquator"
+308	"bat"
+309	"centaur"
+310	"dragon"
+311	"emu"
+312	"venus flytrap"
+313	"griffin"
+314	"hobgoblin"
+315	"ice monster"
+316	"jabberwock"
+317	"kestrel"
+318	"leprechaun"
+319	"medusa"
+320	"nymph"
+321	"orc"
+322	"phantom"
+323	"quagga"
+324	"rattlesnake"
+325	"snake"
+326	"troll"
+327	"black unicorn"
+328	"vampire"
+329	"wraith"
+330	"xeroc"
+331	"yeti"
+332	"zombie"
+
+Fluit
+333	"slime-mold "	"‚±‚¯‚à‚à"
+
+Color of portion
+334	"blue "
+335	"red "
+336	"green "
+337	"grey "
+338	"brown "
+339	"clear "
+340	"pink "
+341	"white "
+342	"purple "
+343	"black "
+344	"yellow "
+345	"plaid "
+346	"burgundy "
+347	"beige "
+
+Colot of portion
+348	"of increase strength "
+349	"of restore strength "
+350	"of healing "
+351	"of extra healing "
+352	"of poison "
+353	"of raise level "
+354	"of blindness "
+355	"of hallucination "
+356	"of detect monster "
+357	"of detect things "
+358	"of confusion "
+359	"of levitation "
+360	"of haste self "
+361	"of see invisible "
+
+Kind of Scroll
+362	"of protect armor "
+363	"of hold monster "
+364	"of enchant weapon "
+365	"of enchant armor "
+366	"of identify "
+367	"of teleportation "
+368	"of sleep "
+369	"of scare monster "
+370	"of remove curse "
+371	"of create monster "
+372	"of aggravate monster "
+373	"of magic mapping "
+
+Kind of weapon
+374	"short bow "
+375	"darts "
+376	"arrows "
+377	"daggers "
+378	"shurikens "
+379	"mace "
+380	"long sword "
+381	"two handed sword "
+
+Kind of armor
+382	"leather armor "
+383	"ring mail "
+384	"scale mail "
+385	"chain mail "
+386	"banded mail "
+387	"splint mail "
+388	"plate mail "
+
+
+Kind of wand
+389	"of teleport away "
+390	"of slow monster "
+391	"of confuse monster "
+392	"of invisibility "
+393	"of polymorph "
+394	"of haste monster "
+395	"of sleep "
+396	"of magic missile "
+397	"of cancellation "
+398	"of do nothing "
+
+Kind of ring
+399	"of stealth "
+400	"of teleportation "
+401	"of regeneration "
+402	"of slow digestion "
+403	"of add strength "
+404	"of sustain strength "
+405	"of dexterity "
+406	"of adornment "
+407	"of see invisible "
+408	"of maintain armor "
+409	"of searching "
+
+wands
+410	"steel "
+411	"bronze "
+412	"gold "
+413	"silver "
+414	"copper "
+415	"nickel "
+416	"cobalt "
+417	"tin "
+418	"iron "
+419	"magnesium "
+420	"chrome "
+421	"carbon "
+422	"platinum "
+423	"silicon "
+424	"titanium "
+425	"teak "
+426	"oak "
+427	"cherry "
+428	"birch "
+429	"pine "
+430	"cedar "
+431	"redwood "
+432	"balsa "
+433	"ivory "
+434	"walnut "
+435	"maple "
+436	"mahogany "
+437	"elm "
+438	"palm "
+439	"wooden "
+
+rings
+440	"diamond "
+441	"stibotantalite "
+442	"lapis lazuli "
+443	"ruby "
+444	"emerald "
+445	"sapphire "
+446	"amethyst "
+447	"quartz "
+448	"tiger eye "
+449	"opal "
+450	"agate "
+451	"turquoise "
+452	"pearl "
+453	"garnet "
+
+scrolls
+454	"blech "
+455	"foo "
+456	"barf "
+457	"rech "
+458	"bar "
+459	"blech "
+460	"quo "
+461	"bloto "
+462	"woh "
+463	"caca "
+464	"blorp "
+465	"erp "
+466	"festr "
+467	"rot "
+468	"slie "
+469	"snorf "
+470	"iky "
+471	"yuky "
+472	"ooze "
+473	"ah "
+474	"bahl "
+475	"zep "
+476	"druhl "
+477	"flem "
+478	"behil "
+479	"arek "
+480	"mep "
+481	"zihr "
+482	"grit "
+483	"kona "
+484	"kini "
+485	"ichi "
+486	"niah "
+487	"ogr "
+488	"ooh "
+489	"ighr "
+490	"coph "
+491	"swerr "
+492	"mihln "
+493	"poxi "

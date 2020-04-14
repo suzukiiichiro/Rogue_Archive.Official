@@ -1,0 +1,33 @@
+LinuxRogue v0.3.7
+Wizard Mode Commands & Info
+
+This information applies to the LinuxRogue v0.3.7 archive from 
+Rogue Central @ coredumpcentral.org, with the included Wizard Mode patch
+applied. This information may not apply to the DVORAK keyboard version
+of LinuxRogue.
+
+Enjoy! -core_dump
+
+FEATURES:
+
+* Auto identifies objects on pickup
+* Savescums (savefile isn't erased when you die)
+* Monsters are weaker / you are stronger
+* Always go up 10 HP with each character level increase
+* Don't need to be on stairs, or have amulet, to go up or down dungeon levels.
+  You automatically win when you press the '<' key on dungeon level 1.
+* When you turn on Wizard Mode, you become ineligible for the scoreboard,
+  even if you turn it back off.
+
+KEYS:
+
+Note that the phrase "level" below refers to "dungeon level".
+
+^W	Toggle Wizard Mode
+^I	List all the items which can be found on current level
+^S	Show map of current level
+^T	Show traps on current level
+^O	Show objects on current level
+^Q	Create object
+^M	Show monsters on current level
+^D 	Detailed information on rings you are wearing

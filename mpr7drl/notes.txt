@@ -1,0 +1,19 @@
+ABOUT THE GAME
+This is Martin's Seven-Day Roguelike, aka "mpr7drl", written by me (Martin
+Read) in less than 168 hours total wall time (total of the time I spent
+eating, sleeping, working, coding mpr7drl, playing Nethack, playing SFB,
+playing Angband variants, talking on the phone, arranging to rent a new
+flat, going to the pub to talk about Nethack, reading Livejournal, reading
+Usenet, ...).
+
+KNOWN BUGS AND INFELICITIES:
+* Reloading can corrupt some of the map data; I can't work out quite what's
+  going wrong here.
+* print_obj_name() and print_mon_name() are insufficiently sophisticated.
+* The game balance blows goats.
+* The AI sucks rocks through a straw.
+
+But hey.  It's a roguelike written in 3600 lines of C in 168 hours, so what
+are you expecting?  The next Nethack?
+
+-- MPR, 19:39 Sunday 2005.01.30 GMT 

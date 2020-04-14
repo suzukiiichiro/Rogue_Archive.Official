@@ -1,0 +1,1 @@
+#include "Types.r"#include "Dialogs.r"Resource 'open' (128) {	'jRge',	{		'TEXT'	},};

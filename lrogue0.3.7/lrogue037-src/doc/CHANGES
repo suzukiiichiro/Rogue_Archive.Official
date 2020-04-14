@@ -1,0 +1,156 @@
+LinuxRogue
+CHANGES log
+
+Version: 0.3.4
+2006-05-06
+Ashwin Nanjappa <ashwin.n@gmail.com>
+
+Alain Williams <addw@phcomp.co.uk>
+* Enabling LinuxRogue to run multi user:
+    - Instructions file at: /usr/local/share/games/rogue/rogue.instr
+    - Score file at: /var/games/RogueScores
+
+Ashwin Nanjappa
+* malloc compilation problem in machdep.c fixed.
+
+-------------------------------------------------------------------------------
+
+Version: 0.3.3
+2004-06-05
+Ashwin N. <ashwin@despammed.com>
+
+John Snively <eeyore@lucent.com>
+* Pointed out the fix by Ulf Harnhammer for buffer overflow vulnerability in
+  Rogue's save game feature.
+
+-------------------------------------------------------------------------------
+
+Version: 0.3.2
+2004-05-02
+Ashwin N. <ashwin@despammed.com>
+
+Miguel G. C. <mgcuadrado@indra.es>
+* Extended out the QWERTY specific key mapping into a generic configuration.
+  Added support for DVORAK key mapping.
+
+Ashwin N. <ashwin@despammed.com>
+* Removed all (ancient) UNIX specific idiosyncracies in machdep.c
+
+-------------------------------------------------------------------------------
+
+Version: 0.3
+2004-02-15
+Ashwin N. <ashwin@despammed.com>
+
+Ashwin N <ashwin@despammed.com>
+* Header files added for all source files. #includes of these files added
+  to all source files to replace the former dirty way of using externs.
+* Makefile
+  Prerequisites are generated automatically. Needs some more work.
+* Corrected tons of punctuation mistakes in the messages displayed to the
+  player.
+* static on functions removed. It was unnecessary in the first place.
+* Unused extern variable declarations removed.
+* Lots of beautification of code (mostly on braces).
+* shorts converted to ints in lots of places.
+* spec_hit.c file renamed to special_hit.c
+
+Chris
+* hit.c
+  Integer math bug fixed in damage to armor.
+* inventory.c
+  The output is always sorted by the selection letter. The other change allows
+  you to select an item from the inventory viewing screen. The second is how
+  the old inventory() function ended up moved to inv_sel() with inventory()
+  just becoming a call to inv_sel() with arguments.
+* monster.c
+  Added a function fix_mon_damage. This function corrects the damage pointer
+  when loading a saved game for a monster. Prior to this fix, monsters already
+  present on a level when saved were restored with random damage amounts. Most
+  commonly unable to hit the player due to their damage being 0.
+* move.c
+  My changes are an attempt to enable following of tunnels between rooms. It
+  gets a little funny when you are in one of those maze style rooms but works
+  for the most part. Following of turns in the tunnels is only active for
+  control and a direction. Such as ^H.
+* object.c
+  The weapon equivalent of the monster fix. It was very annoying to restore a
+  saved game and suddenly only be able to hit a monster with the damage for
+  your strength.
+* pack.c
+  Contains the remainder of the changes to allow selection during inventory
+  display.
+* play.c
+  The changes to allow the / command to identify characters on the screen as
+  per rogue-guide.txt.
+* save.c
+  Added code to call the functions to fix monster and weapon damages when
+  restoring a saved file.
+* rogue-guide.txt
+  High bit characters changed to normal chars.
+
+-------------------------------------------------------------------------------
+
+Version: 0.2.2
+2004-01-15
+Ashwin N <ashwin@despammed.com>
+
+* V0.2.1 carried a corrupted AUTHORS file. The file has been repaired.
+
+-------------------------------------------------------------------------------
+
+Version: 0.2.1
+2003-03-09
+Ashwin N <ashwin@despammed.com>
+
+Lots of fixes in 0.2.1. Most of the Segmentation Faults should disappear now.
+
+* After seeking help (using ?) the dungeon map used to disappear. This is
+  fixed.
+* get_input_line was being called with the wrong parameters in lots of places.
+  All of them are fixed. No more silly Segmentation Faults that were being
+  reported should occur.
+* Password has been changed from an eccentric one to "password"
+* Command to create objects in wizard mode was Ctrl-C, now changed to Ctrl-/
+
+  (Thanks to Matt <mattk@cyberonic.com> for pointing out all the above bugs
+  and their fixes too.)
+
+* Karl-Olov Serrander reported problems with getlogin() in function md_gln()
+  under RH8. Replaced it with getpwnam() as he suggested.
+
+-------------------------------------------------------------------------------
+
+Version: 0.2
+2003-02-21
+Ashwin N <ashwin@despammed.com>
+
+* The inbuilt curses/termlib emulation code (for systems which don't have
+  ncurses) has been removed.
+* All register variables changed to normal.
+* All function declaration and definitions ANSI-fied from the old K&R style.
+* All warnings fixed (a ton of them used to show up if I compiled with -Wall).
+
+-------------------------------------------------------------------------------
+
+Verison: 0.1
+
+* The latest version I could get my hands on when I looked for a Linux port of
+  Rogue.
+
+-=-=-=-=-=-=-=-=-
+
+Title:          Rogue Clone
+Version:        LinuxRogue 0.1 (Rogue 5.3 Clone Pl2)
+Description:    Rogue dungeon game
+Author:         Alan Cox(anarchy@sunacm.swan.ac.uk)
+                derived from prior work by
+                        stevew@netcom.com(Steve Wilson)         (Linux Port)
+                        tim@zeus.tek.com(Tim Stoehr)            (Original work)
+Maintained-By:  Alan Cox(anarchy@sunacm.swan.ac.uk)
+                (Swansea University Computer Society)
+Platforms:      Linux 0.95 or better, Linux-Lite
+Copying-Policy: Freely Redistributable
+Keywords:       rogue dungeons of doom linux game yendor
+
+-=-=-=-=-=-=-=-=-

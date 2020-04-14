@@ -1,0 +1,405 @@
+MARTIN'S DUNGEON BASH, VERSION 1.7
+==================================
+Copyright 2009 Martin Read.
+
+This software is released under the terms of the BSD-style licence as provided
+in the file /usr/share/doc/apps/LICENSES/BSD on a Debian GNU/Linux system.
+
+Martin's Dungeon Bash (aka "dungeonbash") is copyright 2005-2009 Martin Read.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ABOUT THE GAME
+--------------
+This is Martin's Dungeon Bash, aka "dungeonbash", version 1.7.  This release
+of Martin's Dungeon Bash fixes several bugs in version 1.6.
+
+Martin's Dungeon Bash v1.7 has a very simple concept: Kill as many monsters
+as you can and amass as much gold as you can, diving ever deeper into Martin's
+Infinite Dungeon, until you die.  There is no "victory" condition; the only
+objective provided by the design is "see how far you get, how much gold you
+gather, and how many monsters you kill".
+
+There are no new gameplay features currently planned.
+
+The game has a website:
+  http://www.chiark.greenend.org.uk/~mpread/dungeonbash/
+
+Discussion of Martin's Dungeon Bash is on-topic for the newsgroup
+rec.games.roguelike.misc ; please put -MPRDB- in the Subject: header of any
+post to RGRM regarding Martin's Dungeon Bash.
+
+INSTALLATION INSTRUCTIONS
+-------------------------
+On Linux (and other Unix-like systems, though I don't guarantee it working
+on any given Unix):
+   tar xzf dungeonbash-1.7.tar.gz
+   cd dungeonbash-1.7
+   make all
+   cp dungeonbash /somewhere/in/your/PATH
+
+Richard Kettlewell reports that Darwin users should edit the Makefile
+before compiling to remove '-Werror' from CFLAGS, due to a bug in Darwin's
+copy of 'ncurses.h'. This may also apply to other platforms' implementations
+of curses. (The version of ncurses currently distributed with Debian
+GNU/Linux takes 'const char *' where it wants strings that it isn't
+going to modify; some implementations of curses declare these functions to
+take 'char *' in those locations.)
+
+David Damerell reports that if you are using a particularly old version
+of GCC, you may need to remove the '-Wunreachable-code' flag from CFLAGS.
+
+(No, I will not consider removing any of the -W flags from the default
+distribution; they are all there for a reason, with -Werror being there to
+stop me getting away with having warnings.)
+
+I am also informed that with suitable minor modifications, my code will 
+build on Windows XP (I believe using a GCC-based environment).
+
+The dungeonbash binary does not require any setgid or setuid privileges, and
+does not require root privilege to install unless you want to put it in a
+system directory (e.g. /usr/local/games), as it has no shared data and no
+shared playground.  Players are trusted to not savescum, because savescumming
+is cheating, and cheating sucks.
+
+There are not official binary releases of Martin's Dungeon Bash v1.7
+contemporaneous with the source release.
+
+ABOUT THE GAME
+--------------
+Martin's Dungeon Bash v1.7 is conceptually trivial: You are trapped in an
+(approximately) infinitely deep dungeon complex from which there is said to
+be no possible escape.  Not being ready to give up on life just yet, you
+decide to kill as many of the denizens as possible before you yourself
+succumb.
+
+As you dive deeper into the dungeon, you will meet more fearsome foes, and
+familiar foes will increase in power.  It is said that eventually, the
+beasts of the dungeon grow so mighty that they can slay even the boldest of
+heroes with a single blow.
+
+REPORTING BUGS
+--------------
+Report bugs by e-mail to mpread+dbash+1@chiark.greenend.org.uk.
+
+THANKS TO
+---------
+* Jeff Lait, for the concept of the Seven-Day Roguelike Challenge (and
+  POWDER's speed system, which I have approximately ripped off), and for the
+  suggestion I've implemented whereby armour and weapons are slowly ground
+  away through use and so the player must carry spares.
+* Jon Amery, for reporting a bug in v1.0 which led to me finding that (1)
+  I hadn't put an entry for identify scrolls in permobjs[] (2) magic robes
+  weren't being identified on wearing (3) mundane robes weren't being listed
+  properly in the inventory.  Jon also spotted a bug in 1.0 which I failed to
+  fix in 1.1 (regarding summoned monsters), which I have now put right.
+* Adam White, for alerting me to the fact that I was making a now-unsafe
+  assumption about the size of long int, which caused the RNG to do Bad
+  Things on x86-64.
+* Gero Kunter, for reporting a big bunch of bugs in v1.2 and v1.3, and
+  coming up with some very good suggestions for improving play balance.
+* David Damerell, for a host of bug reports.
+* Richard Kettlewell, for the pointers on building the game on Darwin.
+* Programmers too numerous to mention, down the years, who have written the
+  assortment of roguelike games I've played.
+* You, for downloading my game.
+
+NEW FEATURES IN RELEASE 1.7
+---------------------------
+* None.
+
+BUG FIXES IN RELEASE 1.7
+------------------------
+* 'e'ating now consumes a turn as well as an item of food.
+* Wizards no longer drop runeswords.
+* The HP and XP of wraiths have been corrected to be more appropriate for their
+  power rating.
+* The armour spoiler now correctly proclaims itself to be the armour spoiler.
+
+NEW FEATURES IN RELEASE 1.6
+---------------------------
+* The curses-based display module should do much less I/O now.
+* There is now a "wizard" mode for debugging purposes. Enable it by changing
+  the WIZARD_MODE macro in dunbash.h from 0 to 1.
+* Certain monsters are now (much) easier to hit. (In particular, a first
+  level character is now capable of hitting a bad elf, and it's virtually
+  impossible to miss a zombie.)
+* Necromantic bolts and lightning bolts now use pure-agility defence.
+* Once your food counter hits the lower end cap, rings of regeneration
+  cease to function.
+
+BUG FIXES IN RELEASE 1.6
+------------------------
+* 'T'aking off armour no longer consumes a turn if you are already naked.
+* Treasure zoos no longer have absurdly large numbers of monsters.
+* Flags in struct permons are now being initialised to sensible values;
+  this resolves several issues in version 1.5, including the absence of
+  black magic, the failure of many monsters to use their ranged attacks,
+  and the failure of many monsters to resist elemental damage correctly.
+
+NEW FEATURES IN RELEASE 1.5
+---------------------------
+* Zombies no longer regain hit points over time.
+* The player is alerted when his food counter drops below 100, and again when
+  it drops below zero.
+* The 'I'nspect command permits the player to examine his belongings.
+* The '\' command permits the player to review what types of item he has
+  knowledge of.
+* The '#' command permits the player to inspect the underlying terrain,
+  without the obstructions caused by monsters, the player character,
+  and items on the floor.
+* Body and agility are now capped at 99.
+* There are more kinds of food.  Each individual kind of food has non-zero
+  rarity.  As a result, the player may well end up needing to carry
+  several kinds of food.
+
+BUG FIXES IN RELEASE 1.5
+------------------------
+* A conceptual clash in symbol space has been resolved by categorising
+  duellists and warlords as 'f'ighters.
+* The status window now shows body and agility in a "current/max" format so
+  that the player can distinguish between temporary and permanent ability
+  loss.
+* Demon summoning no longer attempts to make the summoned demon materialise
+  on top of the summoner.
+* The first item in the inventory no longer scrolls off the message box when
+  attempting to 'd'rop while the pack is full.
+* Body drains now correctly set the status window update flag and update the
+  display.
+* If you can't see a monster involved in the resolution of a ranged attack,
+  you don't get told what it is.
+* Black magicians' names are correctly displayed when spells are cast.
+* The game will no longer attempt to generate more items than the arrays can
+  accommodate.
+* Hellfire messages are changed to be less irritating on repetition.
+* Treasure zoos now work.
+* Restoration potions now trigger a display update.
+* Body and agility damage are displayed in a more useful format.
+* The player's first action now occurs before the first call to
+  update_player(), so the player really does get 2000 ticks worth of food.
+
+NEW FEATURES IN RELEASE 1.4
+---------------------------
+* Ability score damage may be temporary or permanent; temporary ability score
+  damage may be cured using a restoration potion.
+* Armour and weapons are degraded through use, and cannot be repaired.
+* The mechanics of poison damage (e.g. snakebite) have been revamped.
+* Some minor "flavour" has been added to the eating-food message for when the
+  player's "food" score is below zero.
+* Command 'D' writes a character dump.
+* The player's name cannot contain any colons, slashes, or backslashes.
+
+BUG FIXES IN RELEASE 1.4
+------------------------
+* Various pieces of black magic now print the correct monster name.
+* The armourmelt curse now has a meaningful effect.
+* The check for whether the player is wearing a ring in combat.c now correctly
+  checks against -1, not against 0.
+* Monster healing messages no longer appear when the player is out of sight.
+* The inventory-select function now behaves more intelligently in the face of
+  an absence of valid items, and rejects attempts to select nonexistent
+  objects.
+* Aggravation scrolls now do something.
+* Eating now updates the status window.
+* Protection and aggravation scrolls now have randomised titles.
+* The level threshold function now returns the correct value for levels
+  greater than 19.
+* Defilers now cast spells.
+* Demons can no longer get summoned on top of each other.
+* Daggers found in the dungeon now have non-zero utility.
+
+KNOWN BUGS IN RELEASE 1.4
+-------------------------
+* Monster drops which scatter to an explored square that is not currently
+  visible are nevertheless visible. (This is a minor bug, IMO, and I'm not
+  keen on the added state-maintenance required to fix it.)
+
+NEW FEATURES IN RELEASE 1.3
+---------------------------
+* The use of colour has been extended to monsters, and the colour handling
+  in the display code has been much improved as a necessary part of this.
+* Some monsters have had their symbols changed; closely related monsters (for
+  example, thugs and goons) now share a symbol (but have different colours).
+* Several new monsters have been added.
+* Several new magic items have been added.
+* Dungeon rooms are larger than in v1.2; this should improve the usefulness
+  of missile weapons and increase the threat posed by missile-capable monsters.
+* Certain powerful items (most importantly, mage armour, runeswords, and robes
+  of shadows) cannot be found until the deeper levels of the dungeon.  This
+  prevents an early find of such an item from making the first few levels of
+  the dungeon a cakewalk. [Suggestion by Gero Kunter]
+* Some monsters can now use "black magic", giving them several ways to attack
+  (or evade!) the player, not all of which do pure hit point damage.  This
+  includes one or two monsters who can attack from a distance, albeit with
+  limited power, without having to line the player up on a cardinal.
+* Melee-only monsters using the simplest AI mode will no longer "form an
+  orderly queue" if you string them out along a cardinal direction.
+  [Suggestion by Gero Kunter]
+* All monsters now slowly recover hit points; trolls simply do so much more
+  quickly than other kinds of monsters.
+* Hunger and food have been added.  A "hungry" player character regains hit
+  points even more slowly than the v1.2-and-earlier healing rate, and
+  cannot regain hit points above 75% of his normal total.  A "fed" player
+  character regains hit points rather faster than the v1.2-and-earlier healing
+  rate.  Rings of regeneration increase the rate at which the player character
+  becomes hungry.  The player character now starts the game well-fed, with a
+  ration of food in addition to his basic dagger. [Basic suggestion by Gero
+  Kunter; effects of hunger inspired by Jeff Lait's _POWDER_; impact of 
+  regeneration items on metabolic rate is a classic behaviour of roguelikes.]
+* Non-"stupid" monsters who were next to you when you fled a room down a
+  corridor will pursue you down the corridor until you can outrun them.
+* The game now waits for a <CR> or <SPACE> before exiting after save, quit,
+  or player death, and before continuing play after the player gains a level.
+  [Suggestion by Gero Kunter]
+* Increases to maximum hit points are accompanied by an equal increase in
+  current hit points. (This makes the early game a little bit more survivable.)
+* The prompt presented to confirm the 'X' quit command is now much more
+  paranoid; only a capital 'Y' in response to the query will cause the game
+  to be abandoned, with any other response cancelling the quit command.
+* The game now maintains a log file recording every character to die in
+  Martin's Infinite Dungeon.  [Part of a suggestion by Gero Kunter]
+
+BUG FIXES IN RELEASE 1.3
+------------------------
+* Object name printing is more internally consistent, less potentially
+  misleading, and produces a better approximation to "correct English", though
+  if I ever introduce "honourable" or suchlike as a description of an item,
+  I shall have to refine the algorithm further. [Bug reported by Gero Kunter]
+* Monster name printing produces a better approximation to "correct English";
+  the same caveat regarding words like "honourable" applies here.
+* The select_dir() function (used by the 'a'ttack command) now accepts number
+  keys as well as the hjklyubn-keys. [Bug reported by Gero Kunter]
+* Player hit points are correctly displayed after a poison potion has been
+  consumed. [Bug reported by Gero Kunter]
+* The save file is no longer called "7drl.sav.gz"; the new name for the save
+  file is "dunbash.sav.gz". [Bug reported by Gero Kunter]
+* It is now only possible to descend to a new level when standing on a
+  staircase; previously, you could descend from any square on the level.
+  [Bug reported by Gero Kunter]
+* I believe I have fixed the mysterious "ghost monster" bugs, but I can't
+  swear to that.
+
+KNOWN BUGS IN RELEASE 1.3
+-------------------------
+* The log file cannot be shared between users except by playing the game in
+  a shared world- or group-writable directory. I refuse to add any feature
+  requiring setgid or setuid privileges until I have satisfied myself that
+  I know what the necessary steps are to ensure the game does not represent
+  a security hazard to the system on which it is installed set[ug]id.
+* The AI remains not as smart as I wanted it to be.
+* There *still* isn't any sanity checking when loading a saved game.
+
+NEW FEATURES IN RELEASE 1.2
+---------------------------
+* None.
+
+BUG FIXES IN RELEASE 1.2
+------------------------
+* Monsters no longer get summoned in spaces that are not unoccupied floor.
+  [Bug reported by Jon Amery, although the bug turned out to not quite be
+  what he thought it was.]
+* Saved games can once more be reloaded. [Bug detected locally.]
+
+NEW FEATURES IN RELEASE 1.1
+---------------------------
+* Magic robes now auto-ID when worn.
+
+BUG FIXES IN RELEASE 1.1
+------------------------
+* permons[] is no longer stored in the save file, as it has no features that
+  are changed at runtime
+* Magic robes are now correctly printed in the inventory when identified.
+  [Bug reported by Jon Amery]
+* Scrolls of identify now exist and function. [Bug found due to bug report
+  by Jon Amery]
+* The internal RNG now uses "unsigned int" instead of "unsigned long" to store
+  its state. As a result, the game can now be played on x86-64. [Bug reported
+  by Adam White]
+
+NEW FEATURES IN RELEASE 1.0
+---------------------------
+* The game now uses an internal pseudo-random number generator with a much
+  larger period than Berkeley random().
+* Save files are marginally smaller, as the new internal PRNG uses much
+  less state than Berkeley random().
+* The dungeon walls are now "dark yellow" and the player is now "bright
+  white".
+* New monsters.
+* New capabilities for some existing monsters.
+* Several new items.
+
+BUG FIXES IN RELEASE 1.0
+------------------------
+* ood() now works correctly; it makes weak monsters stronger, not weaker,
+  and does not cause related divide-by-zero errors in the dice-rolling code.
+* The dice-rolling code now checks for being passed values less than two,
+  and simply returns 1 or 0 (as appropriate) in such circumstances.
+* Save/reload now works correctly, without corrupting the dungeon map.
+* The status display correctly depicts the player's Agility.
+* Body potions no longer improve the player's Agility.
+* Monsters created by summoning scrolls are no longer hidden from view
+  until the next map update.
+* The 'awake' flag is set (with accompanying message) in the AI branch
+  handling the case where the monster is directly adjacent to the player.
+* Mid-level monsters now have some chance of hitting characters wearing
+  mage armour.
+* Teleport scrolls now actually work.
+* The archive unpacks into a subdirectory.
+
+KNOWN BUGS AND INFELICITIES
+---------------------------
+* There is little incentive for the player to use ranged weapons, as rings
+  do not enhance them and dungeon rooms are small.
+* The game does not actually check that the data loaded from the saved game
+  file even vaguely conforms to what is expected.
+* Monster ranged attacks no longer get silently absorbed by a non-existent
+  monster on their first square of movement.
+* The AI remains less intelligent than it should be.
+
+WRINKLES
+--------
+* Due to a change I made at one point for other reasons, monster melee attacks
+  are more accurate than monster missile attacks.  I like this state of
+  affairs; it prevents dragons from being shockingly lethal.
+
+THE ORIGINAL RELEASE NOTES FOR MPR7DRL NOW FOLLOW
+=================================================
+
+ABOUT THE GAME
+This is Martin's Seven-Day Roguelike, aka "mpr7drl", written by me (Martin
+Read) in less than 168 hours total wall time (total of the time I spent
+eating, sleeping, working, coding mpr7drl, playing Nethack, playing SFB,
+playing Angband variants, talking on the phone, arranging to rent a new
+flat, going to the pub to talk about Nethack, reading Livejournal, reading
+Usenet, ...).
+
+KNOWN BUGS AND INFELICITIES:
+* Reloading can corrupt some of the map data; I can't work out quite what's
+  going wrong here.
+* print_obj_name() and print_mon_name() are insufficiently sophisticated.
+* The game balance blows goats.
+* The AI sucks rocks through a straw.
+
+But hey.  It's a roguelike written in 3600 lines of C in 168 hours, so what
+are you expecting?  The next Nethack?
+
+-- MPR, 19:39 Sunday 2005.01.30 GMT 

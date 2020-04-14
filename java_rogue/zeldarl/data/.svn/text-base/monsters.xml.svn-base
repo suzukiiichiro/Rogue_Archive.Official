@@ -1,0 +1,841 @@
+<monsters>
+	<monster 
+		id = "MOUSE"
+		appearance = "MOUSE"
+		description = "Mouse"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "1"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "30"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "bites you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="RUPEE" prob = "50"/>
+		</drops>
+	</monster>
+	<monster 
+		id = "KEESE"
+		appearance = "KEESE"
+		description = "Keese"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "1"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "40"
+		floating = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "bites you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="HEART" prob = "50"/>
+		</drops>
+	</monster>
+	<monster 
+		id = "GEL"
+		appearance = "GEL"
+		description = "Gel"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "1"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+		<monster 
+		id = "VIRE"
+		appearance = "VIRE"
+		description = "Vire"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "3"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+		<monster 
+		id = "RED_GORIRA"
+		appearance = "RED_GORIRA"
+		description = "Red Gorira"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "2"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+					<rangedAttack id = "MONSTER_MISSILE" 
+					range = "7" frequency = "80" message= "throws a boomerang at you"
+					effectType="directionalmissile" effectID="SFX_BOOMERANG" effectWav="wav/m_skeleton.wav"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+		<monster 
+		id = "POLS"
+		appearance = "POLS"
+		description = "Pol's Voice"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "3"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+			<monster 
+		id = "ZOL"
+		appearance = "ZOL"
+		description = "Zol"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "3"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+		<monster 
+		id = "SKELETON"
+		appearance = "SKELETON"
+		description = "Skeleton"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "4"
+		baseAttack = "2"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="RUPEE" prob = "50"/>
+		</drops>
+	</monster>
+	
+	<monster 
+		id = "CROW"
+		appearance = "CROW"
+		description = "Crow"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "1"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "peaks you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+	<monster 
+		id = "ZOLA"
+		appearance = "ZOLA"
+		description = "Zola"
+		rarity = "95"
+		baseIntegrityPoints = "3"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "80"
+		walkCost = "40"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+					<rangedAttack id = "MONSTER_MISSILE" 
+					range = "7" frequency = "80" message= "shoots a fireball at you"
+					effectType="directionalmissile" effectID="SFX_FIREBALL" effectWav="wav/m_skeleton.wav"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+	<monster 
+		id = "LEEVER"
+		appearance = "LEEVER"
+		description = "Leever"
+		rarity = "70"
+		baseIntegrityPoints = "1"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="HEART" prob = "50"/>
+			<drop type="FEATURE" id="BLUE_RUPEE" prob = "50"/>
+		</drops>
+	</monster>
+	<monster 
+		id = "MOBLIN"
+		appearance = "MOBLIN"
+		description = "Moblin"
+		rarity = "50"
+		baseIntegrityPoints = "3"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+					<rangedAttack id = "MONSTER_MISSILE" 
+					range = "7" frequency = "80" message= "shoots a spear at you"
+					effectType="directionalmissile" effectID="SFX_SPEAR" effectWav="wav/m_skeleton.wav"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+	<monster 
+		id = "ARCHER"
+		appearance = "ARCHER"
+		description = "Archer"
+		rarity = "80"
+		baseIntegrityPoints = "2"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+					<rangedAttack id = "MONSTER_MISSILE" 
+						range = "7" frequency = "80" message= "shoots at you"
+						effectType="directionalmissile" effectID="SFX_ARROW" effectWav="wav/m_skeleton.wav"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="HEART" prob = "50"/>
+			<drop type="FEATURE" id="BLUE_RUPEE" prob = "20"/>
+		</drops>
+	</monster>
+	<monster 
+		id = "TEKTITE"
+		appearance = "TEKTITE"
+		description = "Tektite"
+		rarity = "80"
+		baseIntegrityPoints = "2"
+		baseAttack = "2"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+	<monster 
+		id = "PEAHAT"
+		appearance = "PEAHAT"
+		description = "PeaHat"
+		rarity = "60"
+		baseIntegrityPoints = "1"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		floating = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="RUPEE" prob = "50"/>
+			<drop type="FEATURE" id="BLUE_RUPEE" prob = "20"/>
+		</drops>
+	</monster>
+	<monster 
+		id = "LYNEL"
+		appearance = "LYNEL"
+		description = "Lynel"
+		rarity = "40"
+		baseIntegrityPoints = "4"
+		baseAttack = "2"
+		baseSightRange = "8"
+		attackCost = "50"
+		walkCost = "50"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+	<monster 
+		id = "OCTOROC"
+		appearance = "OCTOROC"
+		description = "Red Octoroc"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "2"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "70"
+		walkCost = "70"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "bites you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="RUPEE" prob = "50"/>
+			<drop type="FEATURE" id="BLUE_RUPEE" prob = "50"/>
+		</drops>
+	</monster>
+
+	
+	<monster 
+		id = "MOLDORM"
+		appearance = "MOLDORM"
+		description = "Moldorm"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "2"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+	
+	<monster 
+		id = "ROPE"
+		appearance = "ROPE"
+		description = "Rope"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "2"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+	
+	<monster 
+		id = "RED_DARKNUT"
+		appearance = "RED_DARKNUT"
+		description = "Red Darknut"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "2"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>
+
+	<monster 
+		id = "LIKELIKE"
+		appearance = "LIKELIKE"
+		description = "LikeLike"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "6"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="RUPEE" prob = "40"/>
+		</drops>
+	</monster>	
+	
+		<monster 
+		id = "BLUE_GORIRA"
+		appearance = "BLUE_GORIRA"
+		description = "Blue Gorira"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "3"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="RUPEE" prob = "50"/>
+			<drop type="FEATURE" id="BLUE_RUPEE" prob = "50"/>
+			<drop type="FEATURE" id="RED_RUPEE" prob = "50"/>			
+		</drops>
+	</monster>	
+	
+	<monster 
+		id = "LANDMOLA"
+		appearance = "LANDMOLA"
+		description = "Landmola"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "4"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+	</monster>	
+	
+		<monster 
+		id = "BLUE_DARKNUT"
+		appearance = "BLUE_DARKNUT"
+		description = "Blue Darknut"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "6"
+		baseAttack = "2"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+				<drops>
+			<drop type="FEATURE" id="HEART" prob = "50"/>
+			<drop type="FEATURE" id="RED_RUPEE" prob = "20"/>
+		</drops>
+	</monster>	
+		<monster 
+		id = "STALFOS"
+		appearance = "STALFOS"
+		description = "Stalfos"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "5"
+		baseAttack = "3"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+				<drops>
+			<drop type="FEATURE" id="BLUE_RUPEE" prob = "50"/>
+			<drop type="FEATURE" id="RED_RUPEE" prob = "20"/>
+		</drops>
+	</monster>	
+		<monster 
+		id = "BLUE_WIZZROBE"
+		appearance = "BLUE_WIZZROBE"
+		description = "Blue Wizzrobe"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "4"
+		baseAttack = "3"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+					<rangedAttack id = "MONSTER_MISSILE" 
+					range = "7" frequency = "80" message= "shoots a ball of light"
+					effectType="directionalmissile" effectID="SFX_LIGHTBALL" effectWav="wav/m_skeleton.wav"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="BLUE_RUPEE" prob = "50"/>
+			<drop type="FEATURE" id="RED_RUPEE" prob = "20"/>
+		</drops>
+	</monster>		
+	
+	
+	<!-- Bosses -->
+	<monster 
+		id = "GIANT_MOLDORM"
+		appearance = "GIANT_MOLDORM"
+		description = "Giant Moldorm"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "20"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		boss = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="TREASURE_KEY" prob = "120"/>
+		</drops>
+	</monster>
+	<monster 
+		id = "GIANT_LANDMOLA"
+		appearance = "GIANT_LANDMOLA"
+		description = "Giant Landmola"
+		rarity = "60"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "20"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "30"
+		walkCost = "60"
+		boss = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="TREASURE_KEY" prob = "120"/>
+		</drops>
+	</monster>
+	
+	<monster 
+		id = "GOLEM_GUARD"
+		appearance = "GOLEM_GUARD"
+		description = "Golem Guard"
+		rarity = "0"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "20"
+		baseAttack = "2"
+		baseSightRange = "8"
+		attackCost = "80"
+		walkCost = "80"
+		boss = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="TREASURE_KEY" prob = "120"/>
+		</drops>
+	</monster>	
+		<monster 
+		id = "ARMOS_KNIGHT"
+		appearance = "ARMOS_KNIGHT"
+		description = "Armos Knight"
+		rarity = "0"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "15"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "80"
+		walkCost = "80"
+		boss = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="TREASURE_KEY" prob = "120"/>
+		</drops>
+	</monster>	
+	
+	
+	<monster 
+		id = "LIGHT_SHADE"
+		appearance = "LIGHT_SHADE"
+		description = "Shade of Light"
+		rarity = "0"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "5"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "80"
+		walkCost = "80"
+		boss = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+				<rangedAttack id = "MONSTER_MISSILE" 
+					range = "7" frequency = "80" message= "shoots a ball of light"
+					effectType="directionalmissile" effectID="SFX_LIGHTBALL" effectWav="wav/m_skeleton.wav"/>
+			</sel_basic>
+		</selector>
+	</monster>	
+		<monster 
+		id = "DODONGO"
+		appearance = "DODONGO"
+		description = "King Dodongo"
+		rarity = "0"
+		baseIntegrityPoints = "15"
+		baseAttack = "3"
+		baseSightRange = "8"
+		attackCost = "80"
+		walkCost = "80"
+		boss = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="TREASURE_KEY" prob = "120"/>
+		</drops>
+	</monster>	
+		<monster 
+		id = "MOSS_SHADE"
+		appearance = "MOSS_SHADE"
+		description = "Shade of Moss"
+		rarity = "0"
+		baseIntegrityPoints = "20"
+		baseAttack = "1"
+		baseSightRange = "8"
+		attackCost = "80"
+		walkCost = "80"
+		boss = "true"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "hits you"/>
+					<rangedAttack id = "MONSTER_MISSILE" 
+					range = "7" frequency = "80" message= "shoots a puff of poison"
+					effectType="directionalmissile" effectID="SFX_LIGHTBALL" effectWav="wav/m_skeleton.wav"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="TREASURE_KEY" prob = "120"/>
+		</drops>
+	</monster>	
+		<monster 
+		id = "AQUAMENTUS"
+		appearance = "AQUAMENTUS"
+		description = "Aquamentus"
+		minLevel = "1"
+		score = "5"
+		baseIntegrityPoints = "20"
+		baseAttack = "1"
+		baseSightRange = "5"
+		attackCost = "70"
+		walkCost = "70"
+		>
+		<selector>
+			<sel_basic>
+				<rangedAttacks>
+					<rangedAttack id = "MONSTER_CHARGE" 
+						range = "1" frequency = "80" message= "bites you"/>
+				</rangedAttacks>
+			</sel_basic>
+		</selector>
+		<drops>
+			<drop type="FEATURE" id="TREASURE_KEY" prob = "120"/>
+		</drops>
+	</monster>
+</monsters>

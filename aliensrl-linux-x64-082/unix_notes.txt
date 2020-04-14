@@ -1,0 +1,24 @@
+Known issues with Unix (Linux, FreeBSD) AliensRL versions:
+
+1. AliensRL looks for it's data files inside current directory, what 
+   means that
+
+   a. you should always run aliensrl from the directory where the binary is
+      (e.g. using a script like `cd /<aliensrl-directory>/; ./aliensrl').
+
+   b. it's not possible to install aliensrl system-wide.
+
+2. It's known that AliensRL upon exit leaves the console in kind of
+   messy state. This seems to be a problem in FPC Video unit
+   and so far we didn't manage to find a solution.
+
+Also, AliensRL requires that your console has size 80x25 or larger.
+So make sure to adjust size of your console if needed.
+
+You can run AliensRL using one of the scripts aliensrl_gnome-terminal,
+aliensrl_konsole, aliensrl_xterm etc. provided in the release.
+They run the game in new X terminal window (so the 2nd issue is not
+noticed), and set window size to be exactly 80x25.
+You can add at their beginning a line like
+  cd /<aliensrl-directory>/
+to somewhat get rid of the 1st issue too.

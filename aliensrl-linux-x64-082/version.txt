@@ -1,0 +1,151 @@
+0.8.2
+[add] -- TR#035 : completely new level generator, with separate styles for every tower!
+[add] -- TR#046 : Lua AI implemented - different AIs present
+[add] -- TR#028 : scent based AI! Beware, they can smell you...
+[add] -- TR#--- : glass material added - rooms can be separated with glass!
+[add] -- TR#--- : new async animation system - much smoother!
+[add] -- TR#--- : slot system instead of hardcoded quickkeys!
+[add] -- TR#--- : game menu (Escape) - no more Quit, Save, Help and Character screen keybindings
+[add] -- TR#--- : running now is SHIFT+direction
+[add] -- TR#--- : multi-tools - with some basic tech skills you can bypass doors and fix elevators!
+[add] -- TR#--- : you can powerdown proximity doors with basic tech skill and multitool (or without with expert)
+[add] -- TR#--- : added terminals -- with higher tech skill allow to do some fancy stuff (there'll be more!)
+[add] -- TR#--- : reworked effect (e.g. Pain) system and display
+[add] -- TR#--- : 'u'se command added (grenades, packs and other stuff)
+[add] -- TR#--- : stimpacks, painkiller and military medpacks and stimpacks to be found!
+[add] -- TR#--- : autonomus sentry turret kit to be found!
+[add] -- TR#--- : medical skill increases stim effectiveness, fitness reduces withdrawal effects
+[add] -- TR#014 : new fire mechanics and Flamer added!
+[add] -- TR#014 : napalm barrels added
+[add] -- TR#022 : 5.56 ammo and 5.56 weapons
+[add] -- TR#--- : weapon variants - M4A4 and M4A5, MK 88 pistol, M3A and M12 Beretta SMG, H&K G32 rifle and Mk 12 sniper rifle and model 1894 rifle
+[add] -- TR#--- : added -console command line switch, and related config.lua options
+[add] -- TR#057 : smart in-game hints (dissapear with character experience)
+[add] -- TR#--- : new config file format
+[add] -- TR#--- : shotguns and explosions cause knockback! many variables influence it
+[add] -- TR#052 : different alien attacks
+[add] -- TR#054 : a *really* deadly attack for preatorians and the queen!
+[add] -- TR#048 : armor is damaged over time!
+[add] -- TR#048 : armor packs for reparing armor (key "R")
+[add] -- TR#048 : armor has different durability and repair ease, technical skill helps
+[add] -- TR#057 : random helpful hints are displayed during level generation
+[add] -- TR#017 : mission and log interface added (nothing new though)
+[add] -- TR#--- : new config options - clear_messages, more_prompt, message_buffer, message_coloring (with DoomRL style coloring)
+[mod] -- TR#--- : sidearm master skill reduces reload time instead of increasing damage
+[mod] -- TR#--- : technicians start with 3 multi-tools
+[mod] -- TR#--- : tech skill cost increased
+[mod] -- TR#--- : removed DROP ARMOR - 'd' is a common drop with menu (harder to accidentaly drop)
+[mod] -- TR#--- : military keys and doors made light magenta
+[mod] -- TR#044 : doors, crates, lockers now destroyable
+[mod] -- TR#--- : bonus equipment for techs, medics and hw
+[mod] -- TR#--- : SPACE is used to activate lifts
+[mod] -- TR#--- : ASCII mode and GFX mode are now in same executable
+[mod] -- TR#--- : 9mm ammo made weaker, mp5 slightly more accurate
+[mod] -- TR#--- : alien movement made a bit smarter
+[mod] -- TR#--- : pain mod may be up to -5
+[mod] -- TR#--- : reduced amount of aliens, temporarily reduced spawns by 10%
+[mod] -- TR#044 : full level destruction possible with the right firepower
+[mod] -- TR#037 : non-proximity doors open/close/unlock in unison
+[mod] -- TR#--- : ammo on ground shows amount
+[mod] -- TR#--- : picking up a weapon equips it
+[mod] -- TR#--- : medpacks are a lot more common in medical lockers
+[mod] -- TR#--- : crates and lockers have more often goodies too
+[mod] -- TR#--- : military/security crates will at least have ammo
+[mod] -- TR#--- : security crates have +1 roll level
+[mod] -- TR#--- : player color dependent on class (and lighter)
+[mod] -- TR#--- : better brightness calculation (squared)
+[mod] -- TR#--- : gradual_brightness value can be changed in config.lua (although the default should be pretty good)
+[mod] -- TR#--- : pain reduces vision range
+[mod] -- TR#--- : Perception reduces pain and low-light vision penalty
+[mod] -- TR#--- : skill advancement screen shows [maxed] or [mastered] for maxed out skills
+
+0.8
+-- TR#--- : graphics mode, set parameters in abrl.ini
+-- TR#030 : feature - Hall of Fame implemented
+-- TR#038 : security and military crates and lockers
+-- TR#037 : implemented security and military doors, appear in specific towers
+-- TR#037 : security and military keys to be found, especially near corpses
+-- TR#039 : implemented openable lockers and crates
+-- TR#040 : implemented furniture
+-- TR#037 : proximity doors, random door types
+-- TR#026 : pain implementation (closes #26)
+-- TR#024 : player no longer starts in wall (refs #24)
+-- TR#024 : screenshot option added (closes #24)
+-- TR#007 : medical tower has normal ":" wall out of los now
+-- TR#002 : not all elevators work - some are broken
+-- FS#000 : new vision system in-place
+-- FS#048 : TAB cycles targets while targeting
+-- FS#040 : death happens at 0hp, not < 0hp
+-- FS#041 : bleeded barells cannot be turned into walls
+-- TR#--- : map hidden except explored
+-- TR#011 : items on ground tracked
+-- TR#--- : a lot new critters!
+-- TR#--- : new item and being randomizers
+-- TR#--- : shooting weapons with untrained skill incurs additional -1 penalty
+-- TR#--- : run command implemented
+-- TR#--- : balance - minimum 1 damage for most weapons, +1 to aim
+-- TR#--- : 5 room types with rarites dependant on tower
+-- TR#--- : a lot of tweaks to the level generator
+-- TR#--- : commandline switches (-nosound, -nomusic, -fullscreen)
+-- TR#--- : save on crash implemented (yay)
+-- TR#009 : armor dropping ("D") possible now
+-- TR#010 : pulse rifle has now 99 magazine
+-- TR#--- : fix - screenshots in mortem are no longer rotated
+-- TR#--- : color - preatorians are lightmagenta, shells are yellow
+-- TR#--- : maxHP changed to 100
+-- TR#--- : items are now mostly found near corpses
+-- TR#--- : sound on windows moved to FMOD
+-- TR#--- : autotargeting doesn't remember suicide targeting
+-- TR#008 : grenade launcher upped
+-- TR#--- : m42 scoped rifle added
+-- TR#--- : level generation made a lot faster
+-- TR#--- : data moved out of the code
+
+0.8 (BETA 2)
+-- fixed radiation damage
+-- fixed grenade count on char screen
+-- proper music when loading
+-- added a unused experience dingbat
+-- made inc grenades more common
+-- added remembering of last target
+-- save/load added!
+-- typo fixed
+-- max medpacks reduced to 5
+-- medpack use in combat is half effective
+-- radiation made more deadly
+-- radiation suits
+-- added exploding fuel barrels
+-- master skill levels unlocked
+-- heavy weapons master skill added
+-- sidearms master skill added
+-- medical master skill added
+-- light weapons master skill added
+-- temporary technical master skill added
+-- initial grenade capacity = 3/type
+-- fitness increases grenade capacity by 1/level
+-- implemented inc grenades
+-- varied starting ammo/medcount between classes
+
+DAY 7++
+-- added medkit sound
+-- technical skill affects reload
+-- minor UI presentation fixes
+-- increased MP5 mag to 30
+-- fixed crash bug
+-- fixed random spawning
+-- fixed radiation
+
+DAY 7+
+-- decreased M56 and M41A damage
+-- decreasedM56 and 44 ammo spawn rate
+-- added increasing danger level and random spawn
+-- look mode and look when firing (with wound status)
+-- you can no longer close a door on an alien
+-- turncount in mortem
+-- default name added
+-- two typos fixed
+
+
+
+ 
+

@@ -1,0 +1,21 @@
+ID;Name;Appearance;EffectOnUse;SingleUse;evadeBreak;damage;range;reloadTurns;slicesThru;useMessage;rarity;shopDesc;defense;integrity;attackSFX;stackable
+DAGGER;Dagger;DAGGER;;false;1;1;1;0;false;;1;Short blade weapon;0;0; ;false
+MACE;Mace;MACE;;false;2;2;1;0;false;;1;A simple blunt weapon;0;0; ;false
+AXE;Axe;AXE;;false;3;2;1;0;false;;2;Double edged battle axe;0;0; ;false
+ROPE_SPIKE;Rope & Spikes;ROPE_SPIKE;;false;3;3;2;0;false;;3;Midrange chained mace;0;0;MELEE 2 9 30;false
+SWORD;Sword;SWORD;;false;4;3;2;0;false;;4;Double edged slicing blade;0;0;MELEE 2 9 30;false
+GREAT_SWORD;Great Sword;GREAT_SWORD;;false;5;4;3;0;false;;6;Two handed sword;0;0;MELEE 3 9 30;false
+BOW_ARROWS;Bow & Arrows;BOW_ARROWS;;false;2;2;10;1;false;;7;Simple wooden bow;0;0;MISSILE 10 9 10 false;false
+PISTOL;Pistol;PISTOL;;false;6;4;20;6;false;;9;7mm pistol;0;0;MISSILE 20 9 10 false;false
+LIGHT_SWORD;Light Sword;LIGHT_SWORD;;false;4;5;3;0;true;;11;Energy sword;0;0;MELEE 3 9 30;false
+PHAZER;Phazer;PHAZER;;false;4;6;12;5;false;;13;Energy gun;0;0;MISSILE 12 9 10 false;false
+BLASTER;Blaster;BLASTER;;false;8;8;15;4;true;;14;Ultimate technology;0;0;MISSILE 15 9 10 false;false
+LEATHER;Leather;LEATHER;;false;0;0;0;0;false;;1;Padded leather vest;20;10; ;false
+CHAIN_MAIL;Chain Mail;CHAIN_MAIL;;false;0;0;0;0;false;;5;Steel chain mail;30;30; ;false
+PLATE_MAIL;Plate Mail;PLATE_MAIL;;false;0;0;0;0;false;;7;Set of plate armor;40;40; ;false
+VACUUM_SUIT;Vacuum Suit;VACUUM_SUIT;;false;0;0;0;0;false;;12;Suit made for space travels;50;25; ;false
+REFLECT_SUIT;Reflect Suit;REFLECT_SUIT;;false;0;0;0;0;false;;13;High technology battle suit;60;40; ;false
+YELLOW_POTION;Yellow Potion;YELLOW_POTION;RECOVER 5;true;0;0;0;0;false;You drink the yellow potion, You feel better;1;A magical yellow potion, recovers health;0;0; ;false
+GEM;TeleGem;GEM;GEMS;true;0;0;0;0;false;You insert the gem in your gauntlet, the gauntlet shines!;9999;Blue telegem;0;0; ;false
+RED_POTION;Red Potion;RED_POTION;RECOVERMANA 10;true;0;0;0;0;false;You drink the red potion, You feel powerful;1;A magical red potion, recover Mana;0;0; ;false
+MAGIC_ARMOR;Magic Armor;MAGIC_ARMOR;;false;0;0;0;0;false;;9999;Magically made armor;35;60; ;false

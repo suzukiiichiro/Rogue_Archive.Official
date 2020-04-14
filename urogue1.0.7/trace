@@ -1,0 +1,757 @@
++++ Memory tracking possible, +++ Memory debugging enabled, fence size = 8192
++++ Requested size of 48 bytes
++++ Actual malloc of 16432 bytes located at 0xb82e10
+*** Requested memory size stored at 0xb84e08
+--- Returning pointer of 0xb84e10
++++ Requested size of 38 bytes
++++ Actual malloc of 16422 bytes located at 0xb86e50
+*** Requested memory size stored at 0xb88e48
+--- Returning pointer of 0xb88e50
++++ Requested size of 18 bytes
++++ Actual malloc of 16402 bytes located at 0xb8ae80
+*** Requested memory size stored at 0xb8ce78
+--- Returning pointer of 0xb8ce80
++++ Requested size of 39 bytes
++++ Actual malloc of 16423 bytes located at 0xb8eea0
+*** Requested memory size stored at 0xb90e98
+--- Returning pointer of 0xb90ea0
++++ Requested size of 38 bytes
++++ Actual malloc of 16422 bytes located at 0xb92ed0
+*** Requested memory size stored at 0xb94ec8
+--- Returning pointer of 0xb94ed0
++++ Requested size of 51 bytes
++++ Actual malloc of 16435 bytes located at 0xb96f00
+*** Requested memory size stored at 0xb98ef8
+--- Returning pointer of 0xb98f00
++++ Requested size of 42 bytes
++++ Actual malloc of 16426 bytes located at 0xb9af40
+*** Requested memory size stored at 0xb9cf38
+--- Returning pointer of 0xb9cf40
++++ Requested size of 21 bytes
++++ Actual malloc of 16405 bytes located at 0xb9ef80
+*** Requested memory size stored at 0xba0f78
+--- Returning pointer of 0xba0f80
++++ Requested size of 19 bytes
++++ Actual malloc of 16403 bytes located at 0xba2fa0
+*** Requested memory size stored at 0xba4f98
+--- Returning pointer of 0xba4fa0
++++ Requested size of 20 bytes
++++ Actual malloc of 16404 bytes located at 0xba6fc0
+*** Requested memory size stored at 0xba8fb8
+--- Returning pointer of 0xba8fc0
++++ Requested size of 57 bytes
++++ Actual malloc of 16441 bytes located at 0xbaafe0
+*** Requested memory size stored at 0xbacfd8
+--- Returning pointer of 0xbacfe0
++++ Requested size of 6 bytes
++++ Actual malloc of 16390 bytes located at 0xbaf030
+*** Requested memory size stored at 0xbb1028
+--- Returning pointer of 0xbb1030
++++ Requested size of 40 bytes
++++ Actual malloc of 16424 bytes located at 0xbb3040
+*** Requested memory size stored at 0xbb5038
+--- Returning pointer of 0xbb5040
++++ Requested size of 42 bytes
++++ Actual malloc of 16426 bytes located at 0xbb7070
+*** Requested memory size stored at 0xbb9068
+--- Returning pointer of 0xbb9070
++++ Requested size of 34 bytes
++++ Actual malloc of 16418 bytes located at 0xbbb0b0
+*** Requested memory size stored at 0xbbd0a8
+--- Returning pointer of 0xbbd0b0
++++ Requested size of 44 bytes
++++ Actual malloc of 16428 bytes located at 0xbbf0e0
+*** Requested memory size stored at 0xbc10d8
+--- Returning pointer of 0xbc10e0
++++ Requested size of 32 bytes
++++ Actual malloc of 16416 bytes located at 0xbc3120
+*** Requested memory size stored at 0xbc5118
+--- Returning pointer of 0xbc5120
++++ Requested size of 39 bytes
++++ Actual malloc of 16423 bytes located at 0xbc7150
+*** Requested memory size stored at 0xbc9148
+--- Returning pointer of 0xbc9150
++++ Requested size of 17 bytes
++++ Actual malloc of 16401 bytes located at 0xbcb180
+*** Requested memory size stored at 0xbcd178
+--- Returning pointer of 0xbcd180
++++ Requested size of 30 bytes
++++ Actual malloc of 16414 bytes located at 0xbcf1a0
+*** Requested memory size stored at 0xbd1198
+--- Returning pointer of 0xbd11a0
++++ Requested size of 37 bytes
++++ Actual malloc of 16421 bytes located at 0xbd31d0
+*** Requested memory size stored at 0xbd51c8
+--- Returning pointer of 0xbd51d0
++++ Requested size of 18 bytes
++++ Actual malloc of 16402 bytes located at 0xbd7290
+*** Requested memory size stored at 0xbd9288
+--- Returning pointer of 0xbd9290
++++ Requested size of 41 bytes
++++ Actual malloc of 16425 bytes located at 0xbdb4c0
+*** Requested memory size stored at 0xbdd4b8
+--- Returning pointer of 0xbdd4c0
++++ Requested size of 31 bytes
++++ Actual malloc of 16415 bytes located at 0xbdf500
+*** Requested memory size stored at 0xbe14f8
+--- Returning pointer of 0xbe1500
++++ Requested size of 46 bytes
++++ Actual malloc of 16430 bytes located at 0xbe3530
+*** Requested memory size stored at 0xbe5528
+--- Returning pointer of 0xbe5530
++++ Requested size of 45 bytes
++++ Actual malloc of 16429 bytes located at 0xbe7570
+*** Requested memory size stored at 0xbe9568
+--- Returning pointer of 0xbe9570
++++ Requested size of 37 bytes
++++ Actual malloc of 16421 bytes located at 0xbeb5b0
+*** Requested memory size stored at 0xbed5a8
+--- Returning pointer of 0xbed5b0
++++ Requested size of 41 bytes
++++ Actual malloc of 16425 bytes located at 0xbef5e0
+*** Requested memory size stored at 0xbf15d8
+--- Returning pointer of 0xbf15e0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc16650
+*** Requested memory size stored at 0xc18648
+--- Returning pointer of 0xc18650
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc1a670
+*** Requested memory size stored at 0xc1c668
+--- Returning pointer of 0xc1c670
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc1e700
+*** Requested memory size stored at 0xc206f8
+--- Returning pointer of 0xc20700
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc22720
+*** Requested memory size stored at 0xc24718
+--- Returning pointer of 0xc24720
++++ Free of memory located at 0xc18650
++++ Checking 0xc18650 as pointer
++++ Real pointer at 0xc16650
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc16650
+*** Requested memory size stored at 0xc18648
+--- Returning pointer of 0xc18650
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc26740
+*** Requested memory size stored at 0xc28738
+--- Returning pointer of 0xc28740
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc2a7d0
+*** Requested memory size stored at 0xc2c7c8
+--- Returning pointer of 0xc2c7d0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc2e7f0
+*** Requested memory size stored at 0xc307e8
+--- Returning pointer of 0xc307f0
++++ Free of memory located at 0xc18650
++++ Checking 0xc18650 as pointer
++++ Real pointer at 0xc16650
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc16650
+*** Requested memory size stored at 0xc18648
+--- Returning pointer of 0xc18650
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc32810
+*** Requested memory size stored at 0xc34808
+--- Returning pointer of 0xc34810
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc368a0
+*** Requested memory size stored at 0xc38898
+--- Returning pointer of 0xc388a0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc3a8c0
+*** Requested memory size stored at 0xc3c8b8
+--- Returning pointer of 0xc3c8c0
++++ Free of memory located at 0xc18650
++++ Checking 0xc18650 as pointer
++++ Real pointer at 0xc16650
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc3e8e0
+*** Requested memory size stored at 0xc408d8
+--- Returning pointer of 0xc408e0
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xc42900
+*** Requested memory size stored at 0xc448f8
+--- Returning pointer of 0xc44900
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc46a70
+*** Requested memory size stored at 0xc48a68
+--- Returning pointer of 0xc48a70
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xc4aa90
+*** Requested memory size stored at 0xc4ca88
+--- Returning pointer of 0xc4ca90
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc4ec00
+*** Requested memory size stored at 0xc50bf8
+--- Returning pointer of 0xc50c00
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc52c20
+*** Requested memory size stored at 0xc54c18
+--- Returning pointer of 0xc54c20
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc56cb0
+*** Requested memory size stored at 0xc58ca8
+--- Returning pointer of 0xc58cb0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc5acd0
+*** Requested memory size stored at 0xc5ccc8
+--- Returning pointer of 0xc5ccd0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc5ed60
+*** Requested memory size stored at 0xc60d58
+--- Returning pointer of 0xc60d60
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc62d80
+*** Requested memory size stored at 0xc64d78
+--- Returning pointer of 0xc64d80
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc66e10
+*** Requested memory size stored at 0xc68e08
+--- Returning pointer of 0xc68e10
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc6ae30
+*** Requested memory size stored at 0xc6ce28
+--- Returning pointer of 0xc6ce30
+
++++ --- Starting pointer scan
++++ --- At newlvl.c, 383
++++ Checking 0xb84e10 as pointer
++++ Real pointer at 0xb82e10
+*** Stored memory size of 48 bytes in header
++++ Checking 0xb88e50 as pointer
++++ Real pointer at 0xb86e50
+*** Stored memory size of 38 bytes in header
++++ Checking 0xb8ce80 as pointer
++++ Real pointer at 0xb8ae80
+*** Stored memory size of 18 bytes in header
++++ Checking 0xb90ea0 as pointer
++++ Real pointer at 0xb8eea0
+*** Stored memory size of 39 bytes in header
++++ Checking 0xb94ed0 as pointer
++++ Real pointer at 0xb92ed0
+*** Stored memory size of 38 bytes in header
++++ Checking 0xb98f00 as pointer
++++ Real pointer at 0xb96f00
+*** Stored memory size of 51 bytes in header
++++ Checking 0xb9cf40 as pointer
++++ Real pointer at 0xb9af40
+*** Stored memory size of 42 bytes in header
++++ Checking 0xba0f80 as pointer
++++ Real pointer at 0xb9ef80
+*** Stored memory size of 21 bytes in header
++++ Checking 0xba4fa0 as pointer
++++ Real pointer at 0xba2fa0
+*** Stored memory size of 19 bytes in header
++++ Checking 0xba8fc0 as pointer
++++ Real pointer at 0xba6fc0
+*** Stored memory size of 20 bytes in header
++++ Checking 0xbacfe0 as pointer
++++ Real pointer at 0xbaafe0
+*** Stored memory size of 57 bytes in header
++++ Checking 0xbb1030 as pointer
++++ Real pointer at 0xbaf030
+*** Stored memory size of 6 bytes in header
++++ Checking 0xbb5040 as pointer
++++ Real pointer at 0xbb3040
+*** Stored memory size of 40 bytes in header
++++ Checking 0xbb9070 as pointer
++++ Real pointer at 0xbb7070
+*** Stored memory size of 42 bytes in header
++++ Checking 0xbbd0b0 as pointer
++++ Real pointer at 0xbbb0b0
+*** Stored memory size of 34 bytes in header
++++ Checking 0xbc10e0 as pointer
++++ Real pointer at 0xbbf0e0
+*** Stored memory size of 44 bytes in header
++++ Checking 0xbc5120 as pointer
++++ Real pointer at 0xbc3120
+*** Stored memory size of 32 bytes in header
++++ Checking 0xbc9150 as pointer
++++ Real pointer at 0xbc7150
+*** Stored memory size of 39 bytes in header
++++ Checking 0xbcd180 as pointer
++++ Real pointer at 0xbcb180
+*** Stored memory size of 17 bytes in header
++++ Checking 0xbd11a0 as pointer
++++ Real pointer at 0xbcf1a0
+*** Stored memory size of 30 bytes in header
++++ Checking 0xbd51d0 as pointer
++++ Real pointer at 0xbd31d0
+*** Stored memory size of 37 bytes in header
++++ Checking 0xbd9290 as pointer
++++ Real pointer at 0xbd7290
+*** Stored memory size of 18 bytes in header
++++ Checking 0xbdd4c0 as pointer
++++ Real pointer at 0xbdb4c0
+*** Stored memory size of 41 bytes in header
++++ Checking 0xbe1500 as pointer
++++ Real pointer at 0xbdf500
+*** Stored memory size of 31 bytes in header
++++ Checking 0xbe5530 as pointer
++++ Real pointer at 0xbe3530
+*** Stored memory size of 46 bytes in header
++++ Checking 0xbe9570 as pointer
++++ Real pointer at 0xbe7570
+*** Stored memory size of 45 bytes in header
++++ Checking 0xbed5b0 as pointer
++++ Real pointer at 0xbeb5b0
+*** Stored memory size of 37 bytes in header
++++ Checking 0xbf15e0 as pointer
++++ Real pointer at 0xbef5e0
+*** Stored memory size of 41 bytes in header
++++ Checking 0xc1c670 as pointer
++++ Real pointer at 0xc1a670
+*** Stored memory size of 136 bytes in header
++++ Checking 0xc20700 as pointer
++++ Real pointer at 0xc1e700
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc24720 as pointer
++++ Real pointer at 0xc22720
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc28740 as pointer
++++ Real pointer at 0xc26740
+*** Stored memory size of 136 bytes in header
++++ Checking 0xc2c7d0 as pointer
++++ Real pointer at 0xc2a7d0
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc307f0 as pointer
++++ Real pointer at 0xc2e7f0
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc34810 as pointer
++++ Real pointer at 0xc32810
+*** Stored memory size of 136 bytes in header
++++ Checking 0xc388a0 as pointer
++++ Real pointer at 0xc368a0
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc3c8c0 as pointer
++++ Real pointer at 0xc3a8c0
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc408e0 as pointer
++++ Real pointer at 0xc3e8e0
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc44900 as pointer
++++ Real pointer at 0xc42900
+*** Stored memory size of 360 bytes in header
++++ Checking 0xc48a70 as pointer
++++ Real pointer at 0xc46a70
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc4ca90 as pointer
++++ Real pointer at 0xc4aa90
+*** Stored memory size of 360 bytes in header
++++ Checking 0xc50c00 as pointer
++++ Real pointer at 0xc4ec00
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc54c20 as pointer
++++ Real pointer at 0xc52c20
+*** Stored memory size of 136 bytes in header
++++ Checking 0xc58cb0 as pointer
++++ Real pointer at 0xc56cb0
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc5ccd0 as pointer
++++ Real pointer at 0xc5acd0
+*** Stored memory size of 136 bytes in header
++++ Checking 0xc60d60 as pointer
++++ Real pointer at 0xc5ed60
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc64d80 as pointer
++++ Real pointer at 0xc62d80
+*** Stored memory size of 136 bytes in header
++++ Checking 0xc68e10 as pointer
++++ Real pointer at 0xc66e10
+*** Stored memory size of 24 bytes in header
++++ Checking 0xc6ce30 as pointer
++++ Real pointer at 0xc6ae30
+*** Stored memory size of 136 bytes in header
++++ --- Done pointer scan
+
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc6eec0
+*** Requested memory size stored at 0xc70eb8
+--- Returning pointer of 0xc70ec0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc72ee0
+*** Requested memory size stored at 0xc74ed8
+--- Returning pointer of 0xc74ee0
++++ Free of memory located at 0xc68e10
++++ Checking 0xc68e10 as pointer
++++ Real pointer at 0xc66e10
+*** Stored memory size of 24 bytes in header
++++ Free of memory located at 0xc4ca90
++++ Checking 0xc4ca90 as pointer
++++ Real pointer at 0xc4aa90
+*** Stored memory size of 360 bytes in header
++++ Free of memory located at 0xc48a70
++++ Checking 0xc48a70 as pointer
++++ Real pointer at 0xc46a70
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc66e10
+*** Requested memory size stored at 0xc68e08
+--- Returning pointer of 0xc68e10
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xc46a70
+*** Requested memory size stored at 0xc48a68
+--- Returning pointer of 0xc48a70
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc4abe0
+*** Requested memory size stored at 0xc4cbd8
+--- Returning pointer of 0xc4cbe0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc76f00
+*** Requested memory size stored at 0xc78ef8
+--- Returning pointer of 0xc78f00
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc7af90
+*** Requested memory size stored at 0xc7cf88
+--- Returning pointer of 0xc7cf90
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc7efb0
+*** Requested memory size stored at 0xc80fa8
+--- Returning pointer of 0xc80fb0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc83040
+*** Requested memory size stored at 0xc85038
+--- Returning pointer of 0xc85040
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc87060
+*** Requested memory size stored at 0xc89058
+--- Returning pointer of 0xc89060
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc8b0f0
+*** Requested memory size stored at 0xc8d0e8
+--- Returning pointer of 0xc8d0f0
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xc8f110
+*** Requested memory size stored at 0xc91108
+--- Returning pointer of 0xc91110
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc93280
+*** Requested memory size stored at 0xc95278
+--- Returning pointer of 0xc95280
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc972a0
+*** Requested memory size stored at 0xc99298
+--- Returning pointer of 0xc992a0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xc9b330
+*** Requested memory size stored at 0xc9d328
+--- Returning pointer of 0xc9d330
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xc9f350
+*** Requested memory size stored at 0xca1348
+--- Returning pointer of 0xca1350
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xca33e0
+*** Requested memory size stored at 0xca53d8
+--- Returning pointer of 0xca53e0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xca7400
+*** Requested memory size stored at 0xca93f8
+--- Returning pointer of 0xca9400
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcab490
+*** Requested memory size stored at 0xcad488
+--- Returning pointer of 0xcad490
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xcaf4b0
+*** Requested memory size stored at 0xcb14a8
+--- Returning pointer of 0xcb14b0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcb3620
+*** Requested memory size stored at 0xcb5618
+--- Returning pointer of 0xcb5620
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcb7640
+*** Requested memory size stored at 0xcb9638
+--- Returning pointer of 0xcb9640
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcbb6d0
+*** Requested memory size stored at 0xcbd6c8
+--- Returning pointer of 0xcbd6d0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcbf6f0
+*** Requested memory size stored at 0xcc16e8
+--- Returning pointer of 0xcc16f0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcc3780
+*** Requested memory size stored at 0xcc5778
+--- Returning pointer of 0xcc5780
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcc77a0
+*** Requested memory size stored at 0xcc9798
+--- Returning pointer of 0xcc97a0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xccb830
+*** Requested memory size stored at 0xccd828
+--- Returning pointer of 0xccd830
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xccf850
+*** Requested memory size stored at 0xcd1848
+--- Returning pointer of 0xcd1850
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcd39c0
+*** Requested memory size stored at 0xcd59b8
+--- Returning pointer of 0xcd59c0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcd79e0
+*** Requested memory size stored at 0xcd99d8
+--- Returning pointer of 0xcd99e0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcdba70
+*** Requested memory size stored at 0xcdda68
+--- Returning pointer of 0xcdda70
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcdfa90
+*** Requested memory size stored at 0xce1a88
+--- Returning pointer of 0xce1a90
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xce3b20
+*** Requested memory size stored at 0xce5b18
+--- Returning pointer of 0xce5b20
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xce7b40
+*** Requested memory size stored at 0xce9b38
+--- Returning pointer of 0xce9b40
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcebbd0
+*** Requested memory size stored at 0xcedbc8
+--- Returning pointer of 0xcedbd0
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xcefbf0
+*** Requested memory size stored at 0xcf1be8
+--- Returning pointer of 0xcf1bf0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcf3d60
+*** Requested memory size stored at 0xcf5d58
+--- Returning pointer of 0xcf5d60
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcf7d80
+*** Requested memory size stored at 0xcf9d78
+--- Returning pointer of 0xcf9d80
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcfbe10
+*** Requested memory size stored at 0xcfde08
+--- Returning pointer of 0xcfde10
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcffe30
+*** Requested memory size stored at 0xd01e28
+--- Returning pointer of 0xd01e30
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd03ec0
+*** Requested memory size stored at 0xd05eb8
+--- Returning pointer of 0xd05ec0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd07ee0
+*** Requested memory size stored at 0xd09ed8
+--- Returning pointer of 0xd09ee0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd0bf70
+*** Requested memory size stored at 0xd0df68
+--- Returning pointer of 0xd0df70
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xd0ff90
+*** Requested memory size stored at 0xd11f88
+--- Returning pointer of 0xd11f90
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd14100
+*** Requested memory size stored at 0xd160f8
+--- Returning pointer of 0xd16100
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd18120
+*** Requested memory size stored at 0xd1a118
+--- Returning pointer of 0xd1a120
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd1c1b0
+*** Requested memory size stored at 0xd1e1a8
+--- Returning pointer of 0xd1e1b0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd201d0
+*** Requested memory size stored at 0xd221c8
+--- Returning pointer of 0xd221d0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd24260
+*** Requested memory size stored at 0xd26258
+--- Returning pointer of 0xd26260
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd28280
+*** Requested memory size stored at 0xd2a278
+--- Returning pointer of 0xd2a280
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd2c310
+*** Requested memory size stored at 0xd2e308
+--- Returning pointer of 0xd2e310
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xd30330
+*** Requested memory size stored at 0xd32328
+--- Returning pointer of 0xd32330
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd344a0
+*** Requested memory size stored at 0xd36498
+--- Returning pointer of 0xd364a0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd384c0
+*** Requested memory size stored at 0xd3a4b8
+--- Returning pointer of 0xd3a4c0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd3c550
+*** Requested memory size stored at 0xd3e548
+--- Returning pointer of 0xd3e550
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd40570
+*** Requested memory size stored at 0xd42568
+--- Returning pointer of 0xd42570
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd44600
+*** Requested memory size stored at 0xd465f8
+--- Returning pointer of 0xd46600
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd48620
+*** Requested memory size stored at 0xd4a618
+--- Returning pointer of 0xd4a620
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd4c6b0
+*** Requested memory size stored at 0xd4e6a8
+--- Returning pointer of 0xd4e6b0
++++ Requested size of 360 bytes
++++ Actual malloc of 16744 bytes located at 0xd506d0
+*** Requested memory size stored at 0xd526c8
+--- Returning pointer of 0xd526d0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd54840
+*** Requested memory size stored at 0xd56838
+--- Returning pointer of 0xd56840
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd58860
+*** Requested memory size stored at 0xd5a858
+--- Returning pointer of 0xd5a860
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd5c8f0
+*** Requested memory size stored at 0xd5e8e8
+--- Returning pointer of 0xd5e8f0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd60910
+*** Requested memory size stored at 0xd62908
+--- Returning pointer of 0xd62910
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd649a0
+*** Requested memory size stored at 0xd66998
+--- Returning pointer of 0xd669a0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd689c0
+*** Requested memory size stored at 0xd6a9b8
+--- Returning pointer of 0xd6a9c0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd6ca50
+*** Requested memory size stored at 0xd6ea48
+--- Returning pointer of 0xd6ea50
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd70a70
+*** Requested memory size stored at 0xd72a68
+--- Returning pointer of 0xd72a70
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd74b00
+*** Requested memory size stored at 0xd76af8
+--- Returning pointer of 0xd76b00
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd78b20
+*** Requested memory size stored at 0xd7ab18
+--- Returning pointer of 0xd7ab20
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd7cbb0
+*** Requested memory size stored at 0xd7eba8
+--- Returning pointer of 0xd7ebb0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd80bd0
+*** Requested memory size stored at 0xd82bc8
+--- Returning pointer of 0xd82bd0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd84c60
+*** Requested memory size stored at 0xd86c58
+--- Returning pointer of 0xd86c60
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd8a790
+*** Requested memory size stored at 0xd8c788
+--- Returning pointer of 0xd8c790
++++ Free of memory located at 0xd6ea50
++++ Checking 0xd6ea50 as pointer
++++ Real pointer at 0xd6ca50
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd6ca50
+*** Requested memory size stored at 0xd6ea48
+--- Returning pointer of 0xd6ea50
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd8e7b0
+*** Requested memory size stored at 0xd907a8
+--- Returning pointer of 0xd907b0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd92840
+*** Requested memory size stored at 0xd94838
+--- Returning pointer of 0xd94840
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd96860
+*** Requested memory size stored at 0xd98858
+--- Returning pointer of 0xd98860
++++ Free of memory located at 0xcb14b0
++++ Checking 0xcb14b0 as pointer
++++ Real pointer at 0xcaf4b0
+*** Stored memory size of 360 bytes in header
++++ Free of memory located at 0xcad490
++++ Checking 0xcad490 as pointer
++++ Real pointer at 0xcab490
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xcab490
+*** Requested memory size stored at 0xcad488
+--- Returning pointer of 0xcad490
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xcaf4b0
+*** Requested memory size stored at 0xcb14a8
+--- Returning pointer of 0xcb14b0
++++ Free of memory located at 0xd526d0
++++ Checking 0xd526d0 as pointer
++++ Real pointer at 0xd506d0
+*** Stored memory size of 360 bytes in header
++++ Free of memory located at 0xd4e6b0
++++ Checking 0xd4e6b0 as pointer
++++ Real pointer at 0xd4c6b0
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd4c6b0
+*** Requested memory size stored at 0xd4e6a8
+--- Returning pointer of 0xd4e6b0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd506d0
+*** Requested memory size stored at 0xd526c8
+--- Returning pointer of 0xd526d0
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd9a8f0
+*** Requested memory size stored at 0xd9c8e8
+--- Returning pointer of 0xd9c8f0
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd9e910
+*** Requested memory size stored at 0xda0908
+--- Returning pointer of 0xda0910
++++ Free of memory located at 0xd11f90
++++ Checking 0xd11f90 as pointer
++++ Real pointer at 0xd0ff90
+*** Stored memory size of 360 bytes in header
++++ Free of memory located at 0xd0df70
++++ Checking 0xd0df70 as pointer
++++ Real pointer at 0xd0bf70
+*** Stored memory size of 24 bytes in header
++++ Requested size of 24 bytes
++++ Actual malloc of 16408 bytes located at 0xd0bf70
+*** Requested memory size stored at 0xd0df68
+--- Returning pointer of 0xd0df70
++++ Requested size of 136 bytes
++++ Actual malloc of 16520 bytes located at 0xd0ff90
+*** Requested memory size stored at 0xd11f88
+--- Returning pointer of 0xd11f90

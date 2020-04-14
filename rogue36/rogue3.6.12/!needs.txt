@@ -1,0 +1,23 @@
+Microsoft Visual C++ 2008 Express Edition
+
+Public Domain Curses
+http://pdcurses.sourceforge.net/
+
+pdc34dllw.zip
+  curses.h     -> include folder
+                 (C:\Program Files\Microsoft Visual Studio 9.0\VC\include)
+  pdcurses.dll -> the same folder as "rogue36.exe"
+  pdcurses.lib -> lib folder
+                 (C:\Program Files\Microsoft Visual Studio 9.0\VC\lib)
+
+pdcurs34.zip
+  term.h       -> include folder
+                 (C:\Program Files\Microsoft Visual Studio 9.0\VC\include)
+
+--- * --- * --- * ---
+
+ubuntu (gcc)
+
+Synaptic Package Maneger
+build-essential : Informational list of build-essential packages
+libncurses5-dev : developer's libraries and docs for ncurses

@@ -1,0 +1,21 @@
+LinuxRogue v0.3.7
+Packaged by Rogue Central @ coredumpcentral.org
+
+The following are included in this archive:
+
+linuxrogue-v0.3.7-readme.txt		This file
+linuxrogue-v0.3.7-wizard.txt		Wizard mode instructions
+linuxrogue-v0.3.7-patches.txt		Information on patches
+
+linuxrogue-v0.3.4-docs/*		Documentation from LinuxRogue v0.3.4
+					(v0.3.7 came with no documentation and
+					the latest documentation I could find
+					was that included with v0.3.4.)
+
+linuxrogue-v0.3.7/*			Source code for LinuxRogue v0.3.7
+
+linuxrogue-qwerty-wizkeys.patch		See linuxrogue-v0.3.7-patches.txt
+linuxrogue-versionfix.patch		See linuxrogue-v0.3.7-patches.txt
+
+
+Enjoy! -core_dump

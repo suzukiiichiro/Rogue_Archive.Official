@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!-- file build.xml in your project root directory -->
+  <!-- Ant build script for yfiles -->
+  <!-- The java based Ant tool is available from -->
+  <!-- http://jakarta.apache.org/ant -->
+  <!-- This file demonstrates the use of the yGuard byte -->
+  <!-- code obfuscator from yWorks Gmbh -->
+  <!-- yGuard can be downloaded from -->
+  <!--- http://www.yworks.com/products/yguard -->
+<project name="zrl" default="yguard" basedir=".">
+	<target name="init">
+		<property name="project_name" value="zrl"/>
+		<property name="srcDir" value="./src"/>
+		<property name="classDir" value="bin"/>
+		<property name="jar" value="${project_name}.jar"/>
+		<property name="obfjar" value="${project_name}_obf.jar"/>
+		<property name="renamelog" value="${project_name}_renamelog.xml"/>
+		<property name="shrinklog" value="${project_name}_shrinklog.xml"/>
+		<property name="mainclass" value="zrl.Main"/>
+		<mkdir dir="${classDir}" />
+	</target>
+  <target depends="jar" name="yguard">
+    <taskdef 
+      name="yguard" 
+      classname="com.yworks.yguard.YGuardTask"
+      classpath="yguard.jar"/>
+    <yguard>
+      <inoutpair in="${jar}" out="${obfjar}"/>
+      <externalclasses>
+        <pathelement location="lib/MinML.jar"/>
+        <pathelement location="lib/jl1.0.jar"/>
+        <pathelement location="lib/jcurses-x.jar"/>
+      </externalclasses>
+      <rename mainclass="${mainclass}" logfile="${renamelog}">
+        <property name="error-checking" value="pedantic"/>
+        <keep>
+        <attribute name="SourceFile, LineNumberTable">
+          <patternset>
+            <include name="**"/>
+                </patternset>
+            </attribute>
+        </keep>
+      </rename>
+    </yguard>    	
+  </target>
+  <!-- compile -->
+  <target name="compile" depends="init">
+    <javac 
+      includeantruntime="false"
+      srcdir="${srcDir}" 
+      includes="**/*.java"
+      destdir="${classDir}">
+    </javac>
+  </target>
+  <!-- create .jar -->
+  <target name="jar" depends="compile">
+    <jar 
+      manifest="META-INF/manifest.mf"
+      jarfile="${jar}"
+      basedir="${classDir}"
+      includes="**">
+    </jar>
+  </target>
+  <!-- run project -->
+	<target name="run" depends="yguard">
+		<java classname="${mainclass}" fork="true">
+			<classpath>
+				<pathelement location="${obfjar}"/>
+			</classpath>
+		</java>
+	</target>
+    <!-- removes all that has been built -->
+	<target name="clean" depends="init">
+		<delete dir="${classDir}" includeEmptyDirs="true" />
+	</target>
+</project>
+<!-- end file build.xml -->

@@ -1,0 +1,18 @@
+[33;40m------------------------------------------------------------------------------
+|                                                                            |
+|[1;37;40m                   [1;7;30;40mROGUE: Exploring the Dungeons of Doom[m[1;37;40m                    [m[33;40m|
+|                                                                            |
+|[1;35;40m                     The game of Rogue was designed by:                     [m[33;40m|
+|                                                                            |
+|[1;37;40m                       Michael Toy and Glenn Wichman                        [m[33;40m|
+|                                                                            |
+|                                                                            |
+|[1;35;40m                        Various implementations by:                         [m[33;40m|
+|                                                                            |
+|[1;37;40m                    Ken Arnold, Jon Lane and Michael Toy                    [m[33;40m|
+|                                                                            |
+|                                                                            |
+|[1;33;40m                    Copyright (C) 1980-1983, 1985, 1999                     [m[33;40m|
+|[1;37;40m                 Michael Toy, Ken Arnold and Glenn Wichman                  [m[33;40m|
+|[1;33;40m                            All Rights Reserved                             [m[33;40m|
+------------------------------------------------------------------------------[m

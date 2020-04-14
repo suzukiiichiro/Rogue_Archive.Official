@@ -1,0 +1,113 @@
+== Keybindings ==
+
+Keybindings, as well as resolution and fullscreen options can be changed by
+editing config.lua.
+
+KEYPAD - movement
+SPACE  - action
+ESCAPE - game menu (help, save, quit, character info)
+
+Use numpad with numlock off to move around, SPACE to activate, close or use
+elevator. Non-passable features will also be activated by bumping into them.
+SHIFT+move will do constant move until moving to a feature or enemy in sight.
+
+.   - wait
+g   - pickup (get)
+u   - use item (also assign quickslots)
+1-4 - use item in quickslot
+f   - fire
+r   - reload
+d   - drop equipment piece
+s   - switch to sidearm weapon
+p   - switch to primary weapon
+h   - switch to heavy weapon
+
+l   - Look mode
+F10 - Screenshot (png if graphical, txt in textmode)
+
+TAB (while aiming) - cycle targets
+
+== Common sidearms ==
+
+M4A3 pistol -- Your standard pistol, low armor penetrating abilities but a
+decent clip size, and it uses common 9mm ammo.
+
+.44 Colt -- This one has more power behind it. The colt has decent armor
+penetrating capabilities and also deals more damage, but ammo is harder to
+find.
+
+Sawed-off shotgun -- Needs to be reloaded after each shot. It has low armor
+penetrating capabilites, but has high base damage.
+
+
+== Common primary weapons ==
+
+MP5 -- Your basic SMG. Fires 6 round bursts of 9mm ammo and has a clip of
+30. Low armor penetration.
+
+12g combat shotgun -- Pretty much the same as the sawed-off one, except
+that this one has a 5 round clip, making it much more useful in a tight
+combat situation. Low armor penetration.
+
+M41-A pulse rifle -- The only non-heavy weapon with high armor penetrating
+abilities. Has a clip of 99 M309 bullets and fires bursts of 5 rounds
+and is generally good for killing anything. Though you should probably
+use something else for the small fry to conserve ammo.
+
+
+== Heavy weapons ==
+
+No data.
+
+
+== Grenades ==
+
+Frag -- Your basic fragmentation grenade. Upon detonation it disperses
+a large number of sharp fragments over a relatively large area. The
+fragments severely hurt unarmored targets and also posses light armor
+piercing capabilities, but are almost useless against heavily armored
+targets.
+
+Krak -- High explosive grenades with a small, focused explosion designed
+to break through heavy and reinforced armor. The effective range is much
+smaller than that of a fragmentation grenade, but the effect on anything
+inside the area is all the more devestating. Best used against heavily
+armored targets.
+
+Inc -- High explosive grenade spreading flammable material. Great for 
+escapes.
+
+== Armor ==
+
+Armor is your only protection against an alien's sharp claws, so you'll
+want to make sure to wear one at all times. The most straight forward
+gain from wearing armor is the damage reduction, which differs between
+different kinds of armor.
+
+The number behind the armor represents this damage reduction, e.g. "Armor
+  : Flak armor [2]" means, that the flak armor has a damage reduction of 2,
+which is more than a simple flack jacket has. In addition to protection,
+armor can offer you better offensive capabilities by allowing you to equip,
+and use, heavy weapons. The weakest armor with such a bonus is the
+gyro-stabilizer. It offers no damage reduction but instead grants you the
+ability to equip and fire a heavy weapon. The choice between taking less
+damage and dealing more is tough, and it's all yours. Choose wisely, Marine!
+
+== Getting started ==
+
+AliensRL towers have quite a huge space to explore. However, you are not
+expected (or even advised!) to explore everything. You'll quickly run out
+of ammo if you try to kill everything in your path. Instead, you should
+stock up on ammo and supplies, and when possible try to move to higher 
+levels. Once ready you should try to make a run for the top of the main
+Tower and kill the queen. 
+
+Read the tips during the level generation. Conserve ammo. Remember that
+armored targets (like workers or elite's) are almost unaffected by weak
+ammo (like 9mm or frag grenades). Remember that shooting an alien in the
+face is a lot more effective than from a distance (don't let them kill you
+though!). And above all...
+
+Good luck!
+
+... you're going to need it!

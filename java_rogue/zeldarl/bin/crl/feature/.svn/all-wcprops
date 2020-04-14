@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/src/crl/feature
+END
+SmartFeatureFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/crl/feature/SmartFeatureFactory.java
+END
+Feature.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/src/crl/feature/Feature.java
+END
+CountDown.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/src/crl/feature/CountDown.java
+END
+SmartFeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/src/crl/feature/SmartFeature.java
+END
+FeatureFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/src/crl/feature/FeatureFactory.java
+END
+VFeatures.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/src/crl/feature/VFeatures.java
+END

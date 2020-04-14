@@ -1,0 +1,22 @@
+コンパイル方法
+Rogue 3.6.x / Rogue 5.2.x / Rogue 5.4.x / Super-Rogue / Ultra Rogue / XRogue:
+　Linux:   make dist.linux
+　Linux32: make dist.linux32
+　Cygwin:  make dist.cygwin
+Rogue Clone III:
+　Linux:   make
+　Linux32: make dist.linux32
+　Cygwin:  make
+Moria / Angband / Easyband / EyAngband / NPPAngband / OAngband / quickband 
+/ T.o.M.E. / UnAngband / ZAngband / Z+Angband / Crawl / OMEGA / NetHack:
+　Linux:   ./build.sh
+　Linux32: ./build32.sh
+　Cygwin:  ./build.sh
+Angband 3.1.23.5.0, 4.0.04.0.4
+　Linux:   ./buildlinux.sh
+　Linux32: ./buildlinux32.sh
+　Cygwin:  ./buildcygwin.sh
+CalcRogue:
+　Linux:   ./configure -> make
+　Cygwin:  ./configure -> make
+

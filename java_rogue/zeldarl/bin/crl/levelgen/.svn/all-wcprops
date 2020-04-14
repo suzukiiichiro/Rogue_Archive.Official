@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/src/crl/levelgen
+END
+RuinLevelGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/crl/levelgen/RuinLevelGenerator.java
+END
+MonsterSpawnInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/src/crl/levelgen/MonsterSpawnInfo.java
+END
+RoomMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/src/crl/levelgen/RoomMetaData.java
+END
+TestLevelGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/crl/levelgen/TestLevelGenerator.java
+END
+LevelGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/src/crl/levelgen/LevelGenerator.java
+END
+StaticGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/src/crl/levelgen/StaticGenerator.java
+END
+LevelMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/src/crl/levelgen/LevelMaster.java
+END
+LevelFeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/src/crl/levelgen/LevelFeature.java
+END
+GirdLevelGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/crl/levelgen/GirdLevelGenerator.java
+END
+PatternGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/src/crl/levelgen/PatternGenerator.java
+END
+DungeonGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/src/crl/levelgen/DungeonGenerator.java
+END
+AssignedFeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/src/crl/levelgen/AssignedFeature.java
+END
+OverworldGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/crl/levelgen/OverworldGenerator.java
+END

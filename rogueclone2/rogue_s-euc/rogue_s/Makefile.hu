@@ -1,0 +1,25 @@
+#########################################################
+#							#
+#	Makefile - Makefile for Rogue-clone II		#
+#							#
+#########################################################
+
+OBJS =	curses.o hit.o init.o invent.o level.o\
+	machdep.o main.o message.o monster.o move.o\
+	object.o pack.o play.o random.o ring.o\
+	room.o save.o score.o spechit.o throw.o\
+	trap.o use.o zap.o
+
+CC	= gcc
+CFLAGS	= -O -DMSDOS -DHUMAN -DCURSES -DJAPAN -DCOLOR -DTOPSCO
+
+.c.o:
+	$(CC) -c $(CFLAGS) $*.c
+
+rogue.x: $(OBJS)
+	$(CC) -o rogue.x $(OBJS) -ldos
+
+clean:
+	-del -y *.o
+
+$(OBJS): rogue.h

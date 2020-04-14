@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/2/trunk/src/crl/ai/monster
+END
+MonsterAI.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/src/crl/ai/monster/MonsterAI.java
+END
+BasicMonsterAI.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/src/crl/ai/monster/BasicMonsterAI.java
+END
+StationaryAI.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/src/crl/ai/monster/StationaryAI.java
+END
+RangedAttack.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/src/crl/ai/monster/RangedAttack.java
+END
+RangedAI.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/src/crl/ai/monster/RangedAI.java
+END
+WanderToPlayerAI.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/crl/ai/monster/WanderToPlayerAI.java
+END

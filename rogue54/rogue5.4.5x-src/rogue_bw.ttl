@@ -1,0 +1,18 @@
+------------------------------------------------------------------------------
+|                                                                            |
+|                   ROGUE: Exploring the Dungeons of Doom                    |
+|                                                                            |
+|                     The game of Rogue was designed by:                     |
+|                                                                            |
+|                       Michael Toy and Glenn Wichman                        |
+|                                                                            |
+|                                                                            |
+|                        Various implementations by:                         |
+|                                                                            |
+|                    Ken Arnold, Jon Lane and Michael Toy                    |
+|                                                                            |
+|                                                                            |
+|                    Copyright (C) 1980-1983, 1985, 1999                     |
+|                 Michael Toy, Ken Arnold and Glenn Wichman                  |
+|                            All Rights Reserved                             |
+------------------------------------------------------------------------------
