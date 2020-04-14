@@ -1,0 +1,15 @@
+*.[oa]
+*~
+*.swp
+*.tar.gz
+*.nogit
+*.zip
+*.bz
+*.pdf
+*.bak
+boohu
+*.prof
+*.js
+*.map
+*.html
+boohu.wasm
